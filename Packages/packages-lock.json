@@ -67,7 +67,7 @@
       "hash": "3a3fecab29467a3aab9273536c20f2796c225b46"
     },
     "com.facticus.utils": {
-      "version": "0.12.10",
+      "version": "0.12.14",
       "depth": 0,
       "source": "registry",
       "dependencies": {},

@@ -14,4 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gitProjectRoot: 
   _defaultBranch: dev
-  _usersData: []
+  _usersData:
+  - _userName: monte8902
+    _defaultBranch: design
+    _workPaths: []
