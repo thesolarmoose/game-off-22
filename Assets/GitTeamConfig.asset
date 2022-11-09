@@ -17,4 +17,10 @@ MonoBehaviour:
   _usersData:
   - _userName: monte8902
     _defaultBranch: design
-    _workPaths: []
+    _includePaths: []
+    _excludePaths: []
+  - _userName: MarcoPostman
+    _defaultBranch: audio
+    _includePaths:
+    - FMOD_builds
+    _excludePaths: []
