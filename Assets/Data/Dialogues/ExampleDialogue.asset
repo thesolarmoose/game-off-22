@@ -46,7 +46,7 @@ MonoBehaviour:
           m_WaitForCompletion: 0
           m_LocalVariables: []
     - rid: 805541075321618458
-      type: {class: TriggerList, ns: Dialogues.Triggers, asm: com.facticus.dialogues}
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
       data:
         _triggers: []
 --- !u!114 &11400000
@@ -152,6 +152,6 @@ MonoBehaviour:
           m_WaitForCompletion: 0
           m_LocalVariables: []
     - rid: 805541075321618461
-      type: {class: TriggerList, ns: Dialogues.Triggers, asm: com.facticus.dialogues}
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
       data:
         _triggers: []

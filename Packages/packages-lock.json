@@ -30,7 +30,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "c33e7c9ce505a42955cddac42271a66a9e064b01"
+      "hash": "6b8427827f3283599e79e787d756b6daad388179"
     },
     "com.facticus.git-team": {
       "version": "https://github.com/mnicolas94/facticus-git-team.git",

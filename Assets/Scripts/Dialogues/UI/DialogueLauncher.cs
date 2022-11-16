@@ -1,4 +1,5 @@
 ﻿using System.Threading;
+using Dialogues.Core;
 using NaughtyAttributes;
 using UnityEngine;
 

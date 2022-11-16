@@ -1,4 +1,5 @@
 ﻿using System;
+using Dialogues.Core;
 using UnityEngine;
 using UnityEngine.Localization;
 
