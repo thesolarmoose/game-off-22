@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-48476118024749697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
+  m_Name: ExampleDialogue_line-2
+  m_EditorClassIdentifier: 
+  _lineData:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541075321618436
+  _check:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: -2
+  _trigger:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541075321618458
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 805541075321618436
+      type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _character: {fileID: 11400000, guid: 61b1a8bda66441f44af15d173a100523, type: 2}
+        _dialogueText:
+          m_TableReference:
+            m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
+          m_TableEntryReference:
+            m_KeyId: 99211010048
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+    - rid: 805541075321618458
+      type: {class: TriggerList, ns: Dialogues.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211fcffc7051485f90a5009a9efedc4d, type: 3}
+  m_Name: ExampleDialogue
+  m_EditorClassIdentifier: 
+  _startLines:
+  - {fileID: 8693007784311480828}
+  _lines:
+  - {fileID: 8693007784311480828}
+  - {fileID: -48476118024749697}
+  _linesConnections:
+    m_keys:
+    - {fileID: 8693007784311480828}
+    m_values:
+    - data:
+      - {fileID: -48476118024749697}
+  _editorData:
+    _nodes:
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541075321618459
+      position: {x: 311.2, y: -86.4}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541075321618460
+      position: {x: 763.2, y: -128.8}
+    _edges:
+    - inputNodeIndex: 0
+      inputPortIndex: 0
+      outputNodeIndex: -1
+      outputPortIndex: -1
+    - inputNodeIndex: 1
+      inputPortIndex: 0
+      outputNodeIndex: 0
+      outputPortIndex: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 805541075321618459
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 8693007784311480828}
+    - rid: 805541075321618460
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: -48476118024749697}
+--- !u!114 &8693007784311480828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
+  m_Name: ExampleDialogue_line-1
+  m_EditorClassIdentifier: 
+  _lineData:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541075321618435
+  _check:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: -2
+  _trigger:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541075321618461
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 805541075321618435
+      type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _character: {fileID: 11400000, guid: 61b1a8bda66441f44af15d173a100523, type: 2}
+        _dialogueText:
+          m_TableReference:
+            m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
+          m_TableEntryReference:
+            m_KeyId: 12065955840
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+    - rid: 805541075321618461
+      type: {class: TriggerList, ns: Dialogues.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers: []

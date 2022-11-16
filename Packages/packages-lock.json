@@ -25,6 +25,13 @@
       },
       "hash": "a508df47b1685e507455bf65db0682244cc331a1"
     },
+    "com.facticus.dialogues": {
+      "version": "https://github.com/mnicolas94/facticus-dialogues.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "c33e7c9ce505a42955cddac42271a66a9e064b01"
+    },
     "com.facticus.git-team": {
       "version": "https://github.com/mnicolas94/facticus-git-team.git",
       "depth": 0,
@@ -72,6 +79,13 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
+    },
+    "com.github.siccity.serializablecallback": {
+      "version": "https://github.com/Siccity/SerializableCallback.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "7ff19f122305b6adb47bbee6c8e36e77cb471fb0"
     },
     "com.lms.version_mand": {
       "version": "https://github.com/mnicolas94/LMS.Version.git?path=/Assets/Version",
