@@ -133,6 +133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _renderer: {fileID: 0}
+  _default: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  _outline: {fileID: 2100000, guid: 3e74be3414d252c4584968210331801e, type: 2}
 --- !u!61 &2401339627332618012
 BoxCollider2D:
   m_ObjectHideFlags: 0
