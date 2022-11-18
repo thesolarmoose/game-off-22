@@ -13,6 +13,7 @@ namespace Movement
     {
         [SerializeField] private Camera _camera;
         [SerializeField] private Transform _destination;
+        [SerializeField] private Transform _character;
 
         [SerializeField] private LayerMask _ignoreClicksOn;
 
@@ -38,6 +39,9 @@ namespace Movement
 
             _pointAction.Enable();
             _tapAction.Enable();
+            
+            // move to character position
+            MoveToPosition(_character.position);
         }
 
         private void OnTap(InputAction.CallbackContext ctx)
@@ -48,9 +52,14 @@ namespace Movement
             if (!ignore)
             {
                 var worldPosition = _camera.ScreenToWorldPoint(screenPosition);
-                _destination.position = worldPosition;
+                MoveToPosition(worldPosition);
                 _onMovementRequest?.Invoke();
             }
+        }
+
+        private void MoveToPosition(Vector3 worldPosition)
+        {
+            _destination.position = worldPosition;
         }
 
         private bool ClickedOnIgnore(Vector2 worldPosition)
