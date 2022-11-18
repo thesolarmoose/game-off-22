@@ -7,7 +7,7 @@ using Utils.Attributes;
 
 namespace Interactions.Events
 {
-    public class MoveToPosition : MonoBehaviour, IInteractionEvent
+    public class EventMoveToPosition : MonoBehaviour, IInteractionEvent
     {
         [SerializeField, AutoProperty(AutoPropertyMode.Scene)]
         private OnClickDestinationSetter _clickMovementController;
@@ -50,13 +50,13 @@ namespace Interactions.Events
             _clickMovementController.transform.position = positionToMove;
             
             // wait to for path recalculation
-            while (_characterMover.reachedDestination && !ct.IsCancellationRequested)
+            while (_characterMover.reachedEndOfPath && !ct.IsCancellationRequested)
             {
                 await Task.Yield();
             }
             
             // wait to reach position
-            while (!_characterMover.reachedDestination && !ct.IsCancellationRequested)
+            while (!_characterMover.reachedEndOfPath && !ct.IsCancellationRequested)
             {
                 await Task.Yield();
             }
