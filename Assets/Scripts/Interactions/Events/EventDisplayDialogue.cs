@@ -1,0 +1,30 @@
+﻿using System.Threading;
+using System.Threading.Tasks;
+using AsyncUtils;
+using Dialogues.Core;
+using Dialogues.UI;
+using Movement;
+using UnityEngine;
+using Utils.Attributes;
+
+namespace Interactions.Events
+{
+    public class EventDisplayDialogue : MonoBehaviour, IInteractionEvent
+    {
+        [SerializeField, AutoProperty(AutoPropertyMode.Scene)]
+        private OnClickDestinationSetter _clickMovementController;
+
+        [SerializeField] private Dialogue _dialogue;
+        [SerializeField] private DialoguePopup _dialoguePopupPrefab;
+        
+        public async Task<bool> ExecuteEvent(CancellationToken ct)
+        {
+            _clickMovementController.enabled = false;
+
+            await Popups.ShowPopup(_dialoguePopupPrefab, _dialogue, ct);
+            
+            _clickMovementController.enabled = true;
+            return true;
+        }
+    }
+}
