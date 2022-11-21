@@ -79,7 +79,7 @@ namespace Movement
             MoveToPosition(worldPosition);
         }
         
-        private void MoveToPosition(Vector3 worldPosition)
+        private void MoveToPosition(Vector2 worldPosition)
         {
             _destination.position = worldPosition;
         }
