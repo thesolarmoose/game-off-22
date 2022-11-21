@@ -1246,7 +1246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 836320666}
-  _offset: {x: 0, y: -1.5}
+  _offset: {x: 0, y: 0.13}
   _lerpSpeed: 0.1
   _bounded: 0
   _xBounds: {x: 0, y: 0}

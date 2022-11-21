@@ -21,7 +21,9 @@ namespace Movement
         
         private List<RaycastResult> _raycasts;
         private InputAction _pointAction;
-        private InputAction _tapAction;
+        private InputAction _clickAction;
+
+        private bool _clickIsDown;
 
         public UnityEvent OnMovementRequest
         {
@@ -34,29 +36,49 @@ namespace Movement
             _onMovementRequest = new UnityEvent();
             _raycasts = new List<RaycastResult>();
             _pointAction = InputActionUtils.GetPointAction();
-            _tapAction = InputActionUtils.GetTapAction();
-            _tapAction.performed += OnTap;
+            _clickAction = InputActionUtils.GetClickAction();
+            _clickAction.performed += OnClick;
 
             _pointAction.Enable();
-            _tapAction.Enable();
+            _clickAction.Enable();
             
             // move to character position
             MoveToPosition(_character.position);
         }
 
-        private void OnTap(InputAction.CallbackContext ctx)
+        private void Update()
         {
-            var screenPosition = _pointAction.ReadValue<Vector2>();
-            var ignore = ClickedOnIgnore(screenPosition);
-
-            if (!ignore)
+            if (_clickIsDown)
             {
-                var worldPosition = _camera.ScreenToWorldPoint(screenPosition);
-                MoveToPosition(worldPosition);
-                _onMovementRequest?.Invoke();
+                MoveToPointer();
             }
         }
 
+        private void OnClick(InputAction.CallbackContext ctx)
+        {
+            _clickIsDown = _clickAction.ReadValue<float>() > 0.5f;
+
+            if (_clickIsDown)
+            {
+                var screenPosition = _pointAction.ReadValue<Vector2>();
+                var ignore = ClickedOnIgnore(screenPosition);
+
+                if (!ignore)
+                {
+                    var worldPosition = _camera.ScreenToWorldPoint(screenPosition);
+                    MoveToPosition(worldPosition);
+                    _onMovementRequest?.Invoke();
+                }
+            }
+        }
+
+        private void MoveToPointer()
+        {
+            var screenPosition = _pointAction.ReadValue<Vector2>();
+            var worldPosition = _camera.ScreenToWorldPoint(screenPosition);
+            MoveToPosition(worldPosition);
+        }
+        
         private void MoveToPosition(Vector3 worldPosition)
         {
             _destination.position = worldPosition;
@@ -83,13 +105,13 @@ namespace Movement
         private void OnEnable()
         {
             _pointAction?.Enable();
-            _tapAction?.Enable();
+            _clickAction?.Enable();
         }
         
         private void OnDisable()
         {
             _pointAction?.Disable();
-            _tapAction?.Disable();
+            _clickAction?.Disable();
         }
     }
 }
