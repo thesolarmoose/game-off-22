@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d25f0997198df84bb9189a549316de4, type: 3}
-  m_Name: _Inventory
+  m_Script: {fileID: 11500000, guid: 8eaf195ee586b914bae5f2de28d7a507, type: 3}
+  m_Name: _InventoryRemovedEvent
   m_EditorClassIdentifier: 
   _developerDescription: 
-  Cleared: {fileID: 0}
-  _startCleared: 1
-  Added: {fileID: 11400000, guid: c0943ea1125048047a27e0901a9fc6bb, type: 2}
-  Removed: {fileID: 11400000, guid: d93d0ac33afde3f4489b2bb9b10f39ce, type: 2}
-  list: []
+  _replayBufferSize: 1
+  _inspectorRaiseValue: {fileID: 0}

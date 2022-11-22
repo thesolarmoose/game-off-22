@@ -7,6 +7,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.brunomikoski.animationsequencer": {
+      "version": "0.5.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://package.openupm.com"
+    },
     "com.dbrizov.naughtyattributes": {
       "version": "2.1.4",
       "depth": 0,
@@ -61,7 +68,7 @@
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "b3b1e6cdc9ad1200054c43f16a7ee939fa845dc3"
+      "hash": "4cc178d6e88bd3325209b8d10a943efcc3931ccd"
     },
     "com.facticus.savesystem": {
       "version": "https://github.com/mnicolas94/unity-save-system.git",
