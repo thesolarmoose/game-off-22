@@ -12,8 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 734fbfb568154d32a89d792102f0c779, type: 3}
   m_Name: AtomGenerator
   m_EditorClassIdentifier: 
-  FullQualifiedName: 
-  Namespace: 
-  BaseType: 
-  GenerationOptions: 4194303
-  Scripts: []
+  FullQualifiedName: Items.Item, com.thesolarmoose.name, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  Namespace: Items
+  BaseType: Item
+  GenerationOptions: 80
+  Scripts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

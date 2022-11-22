@@ -20,7 +20,7 @@ namespace Dialogues.UI
         {
             if (line.Character)
             {
-                _nameText.text = line.Character.CharacterName;
+                _nameText.text = await line.Character.CharacterName.GetLocalizedStringAsync().Task;
                 _nameText.color = line.Character.TextColor;
             }
             else

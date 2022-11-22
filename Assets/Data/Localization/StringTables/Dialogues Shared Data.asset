@@ -23,6 +23,14 @@ MonoBehaviour:
     m_Key: test_2
     m_Metadata:
       m_Items: []
+  - m_Id: 2174828818718720
+    m_Key: merchant_meet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2176226411143168
+    m_Key: merchant_already_met
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

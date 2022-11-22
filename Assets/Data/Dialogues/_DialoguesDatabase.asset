@@ -12,5 +12,106 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa728428dbc6421ea22d31329ca4e5e2, type: 3}
   m_Name: _DialoguesDatabase
   m_EditorClassIdentifier: 
-  _checks: []
-  _triggers: []
+  _checks:
+  - {fileID: 2872409648023527040}
+  _triggers:
+  - {fileID: 5772085710611456833}
+  - {fileID: 4026858448459551032}
+--- !u!114 &2872409648023527040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_met_merchant
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483638
+  references:
+    version: 2
+    RefIds:
+    - rid: 805541210524483638
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 53ac6a59b3ddc8d43b34e30daa5adbd2, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
+--- !u!114 &4026858448459551032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_give_initial_items
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 10e6e4c612a911941a3205ff7a143e12, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1fb5cf670e9fe7c4fa6cda64314558a0, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5772085710611456833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_meet_merchant
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 53ac6a59b3ddc8d43b34e30daa5adbd2, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2

@@ -612,7 +612,7 @@ PrefabInstance:
     - target: {fileID: 7504342885021198930, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
       propertyPath: _dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 704987399aaf0294a9ffb28ecc722074, type: 2}
+      objectReference: {fileID: 11400000, guid: 3e73a0875a22c1045adc3910d08a07d6, type: 2}
     - target: {fileID: 7504342885021198930, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
       propertyPath: _clickMovementController
       value: 
@@ -1222,19 +1222,7 @@ MonoBehaviour:
     m_Mode: 0
     m_Event:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1438063916}
-          m_TargetAssemblyTypeName: Movement.OnClickDestinationSetter, com.thesolarmoose.name
-          m_MethodName: Test
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: enter
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
   m_OnObjectExit:
     m_Action: 1
     m_Target: {fileID: 1984739985}
@@ -1243,19 +1231,7 @@ MonoBehaviour:
     m_Mode: 0
     m_Event:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1438063916}
-          m_TargetAssemblyTypeName: Movement.OnClickDestinationSetter, com.thesolarmoose.name
-          m_MethodName: Test
-          m_Mode: 5
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: exit
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
 --- !u!1 &513437782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1780,7 +1756,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646129783
 GameObject:
@@ -2132,8 +2108,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1147994497}
-  m_Father: {fileID: 805317996}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2232,9 +2208,8 @@ Transform:
   m_Children:
   - {fileID: 2145569418}
   - {fileID: 477524866}
-  - {fileID: 801965389}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &805317997
 MonoBehaviour:
@@ -2750,7 +2725,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1108171637
 PrefabInstance:

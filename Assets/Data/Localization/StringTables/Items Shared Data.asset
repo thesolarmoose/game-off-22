@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Items Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Items
+  m_TableCollectionNameGuidString: b1c8a84ee344aab45a57aa34c106d7dd
+  m_Entries:
+  - m_Id: 13840146432
+    m_Key: blind_pills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 55338590208
+    m_Key: clock
+    m_Metadata:
+      m_Items: []
+  - m_Id: 70077374464
+    m_Key: coin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 90843373568
+    m_Key: diamonds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 126515929088
+    m_Key: food
+    m_Metadata:
+      m_Items: []
+  - m_Id: 141741252608
+    m_Key: hammer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 161072799744
+    m_Key: judge_card
+    m_Metadata:
+      m_Items: []
+  - m_Id: 186402201600
+    m_Key: knife
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 805541210524483594
+  references:
+    version: 2
+    RefIds:
+    - rid: 805541210524483594
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1669123035491

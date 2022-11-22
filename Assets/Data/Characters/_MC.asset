@@ -10,8 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e007f9b05e74c498dc2c237edc27efe, type: 3}
-  m_Name: CharacterMain
+  m_Name: _MC
   m_EditorClassIdentifier: 
-  _characterName: Main
+  _characterName:
+    m_TableReference:
+      m_TableCollectionName: GUID:d667bed5bbd5b2f4d8fa280a37661820
+    m_TableEntryReference:
+      m_KeyId: 4778267500544
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   _textColor: {r: 0, g: 0, b: 0, a: 0}
   _characterSprite: {fileID: 0}
+  references:
+    version: 2
+    RefIds: []

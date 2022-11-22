@@ -26,6 +26,15 @@ MonoBehaviour:
     m_Localized: bla bla bla bla bla bla bla bla bla in spanish
     m_Metadata:
       m_Items: []
+  - m_Id: 2174828818718720
+    m_Localized: "Hola aventurero! Aqu\xED tienes un martillo y un cuchillo para
+      comenzar tu aventura."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2176226411143168
+    m_Localized: Hola!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

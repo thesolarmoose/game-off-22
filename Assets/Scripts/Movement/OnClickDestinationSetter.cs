@@ -30,11 +30,6 @@ namespace Movement
             get => _onMovementRequest;
             set => _onMovementRequest = value;
         }
-
-        public void Test(string p)
-        {
-            Debug.Log($"Test: {p}");
-        }
         
         private void Start()
         {
