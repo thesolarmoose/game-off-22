@@ -31,6 +31,11 @@ namespace Movement
             set => _onMovementRequest = value;
         }
 
+        public void Test(string p)
+        {
+            Debug.Log($"Test: {p}");
+        }
+        
         private void Start()
         {
             _onMovementRequest = new UnityEvent();
