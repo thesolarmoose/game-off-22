@@ -15,6 +15,7 @@ namespace Items
         [SerializeField] private AnimationSequencerController _openAnimation;
         [SerializeField] private AnimationSequencerController _closeAnimation;
 
+        private bool _opened;
         private Item _currentSelected;
         private bool _thereIsSelected;
         
@@ -42,7 +43,7 @@ namespace Items
             view.OnSelectEvent.AddListener(() => OnItemSelected(item));
             view.OnDeselectEvent.AddListener(() => OnItemDeselected(item));
 
-            if (gameObject.activeInHierarchy)
+            if (_opened)
             {
                 // execute add animation
                 view.AddAnimation.Play();
@@ -55,7 +56,7 @@ namespace Items
             var exists = _viewList.GetViewFromModel(item, out ItemView view);
             if (exists)
             {
-                if (gameObject.activeInHierarchy)
+                if (_opened)
                 {
                     // execute remove animation
                     view.RemoveAnimation.Play();
@@ -81,12 +82,14 @@ namespace Items
         {
             _openAnimation.Play();
             await _openAnimation.PlayingSequence.AsyncWaitForCompletion();
+            _opened = true;
         }
         
         public async Task ExecuteCloseAnimationAsync()
         {
             _closeAnimation.Play();
             await _closeAnimation.PlayingSequence.AsyncWaitForCompletion();
+            _opened = false;
         }
 
         public bool ExistsItemSelected()

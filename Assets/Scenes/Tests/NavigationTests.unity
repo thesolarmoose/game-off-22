@@ -1898,7 +1898,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &617502158
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2001,7 +2001,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &633635421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2278,7 +2278,7 @@ MonoBehaviour:
         callback:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 617502157}
+            - m_Target: {fileID: 633635420}
               m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
               m_MethodName: SetActive
               m_Mode: 6
@@ -2425,7 +2425,7 @@ MonoBehaviour:
         callback:
           m_PersistentCalls:
             m_Calls:
-            - m_Target: {fileID: 617502157}
+            - m_Target: {fileID: 633635420}
               m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
               m_MethodName: SetActive
               m_Mode: 6
@@ -2724,7 +2724,7 @@ GameObject:
   - component: {fileID: 801965391}
   - component: {fileID: 801965390}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: VersionCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
