@@ -26,7 +26,7 @@ namespace Interactions.Events
             try
             {
                 var moveTask = WaitForDestinationReached(linkedCt);
-                var waitMoveRequestTask = WaitForMovementRequest(linkedCt);
+                var waitMoveRequestTask = _clickMovementController.WaitForMovementRequest(linkedCt);
 
                 var finishedTask = await Task.WhenAny(moveTask, waitMoveRequestTask);
                 await finishedTask; // propagate exceptions hack
@@ -57,24 +57,6 @@ namespace Interactions.Events
             
             // wait to reach position
             while (!_characterMover.reachedEndOfPath && !ct.IsCancellationRequested)
-            {
-                await Task.Yield();
-            }
-        }
-
-        private async Task WaitForMovementRequest(CancellationToken ct)
-        {
-            bool requested = false;
-
-            void OnMovementRequest()
-            {
-                requested = true;
-                _clickMovementController.OnMovementRequest.RemoveListener(OnMovementRequest);
-            }
-
-            _clickMovementController.OnMovementRequest.AddListener(OnMovementRequest);
-
-            while (!requested && !ct.IsCancellationRequested)
             {
                 await Task.Yield();
             }

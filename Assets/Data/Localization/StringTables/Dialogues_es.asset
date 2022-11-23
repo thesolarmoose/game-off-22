@@ -35,6 +35,10 @@ MonoBehaviour:
     m_Localized: Hola!
     m_Metadata:
       m_Items: []
+  - m_Id: 2574584091930624
+    m_Localized: Eso no tiene sentido.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

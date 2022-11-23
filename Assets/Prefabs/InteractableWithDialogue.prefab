@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2800465913488875234}
   - component: {fileID: 7504342885021198930}
   m_Layer: 7
-  m_Name: EventDialogue
+  m_Name: EventNoItemSelectedDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718832123915863560}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2401339627332618002}
-  m_RootOrder: 2
+  m_Father: {fileID: 9122396673837992592}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7504342885021198930
 MonoBehaviour:
@@ -112,7 +112,7 @@ Transform:
   m_Children:
   - {fileID: 2401339627819600246}
   - {fileID: 2401339628392121026}
-  - {fileID: 2800465913488875234}
+  - {fileID: 9122396673837992592}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -158,20 +158,36 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  _onInteractedEvent: {fileID: 11400000, guid: a2a0f8604f806484aaa309a88fb9b8a2, type: 2}
   _events:
   - mode: 0
     unityReference: {fileID: 2401339628392121027}
     rawReference:
       rid: -2
-  - mode: 0
-    unityReference: {fileID: 7504342885021198930}
+  - mode: 1
+    unityReference: {fileID: 0}
     rawReference:
-      rid: -2
+      rid: 805541234036441107
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+    - rid: 805541234036441107
+      type: {class: EventItemSelected, ns: Interactions.Events, asm: com.thesolarmoose.name}
+      data:
+        _inventory: {fileID: 0}
+        _noItemSelectedEvents:
+        - mode: 0
+          unityReference: {fileID: 7504342885021198930}
+          rawReference:
+            rid: -2
+        _wrongItemSelectedEvents:
+        - mode: 0
+          unityReference: {fileID: 8266325930956989495}
+          rawReference:
+            rid: -2
+        _itemSelectedEvents: []
 --- !u!114 &2401339627332618014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,3 +631,83 @@ MonoBehaviour:
   _characterMover: {fileID: 0}
   _leftPosition: {fileID: 2401339627410172086}
   _rightPosition: {fileID: 2401339627246372392}
+--- !u!1 &4262182991613304508
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8853357743774286977}
+  - component: {fileID: 8266325930956989495}
+  m_Layer: 7
+  m_Name: EventWrongItemSelectedDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8853357743774286977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262182991613304508}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9122396673837992592}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8266325930956989495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4262182991613304508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f606a0c8bec14c7db6d395e6aba8af9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clickMovementController: {fileID: 0}
+  _dialogue: {fileID: 11400000, guid: 99b4457a308ce66498ca8894f1d6ef43, type: 2}
+  _dialoguePopupPrefab: {fileID: 4055957975859761653, guid: a43f12cf6ab39c646ae1dfa4b0b00c8b, type: 3}
+--- !u!1 &5767094407038514245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9122396673837992592}
+  m_Layer: 7
+  m_Name: DialogueEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9122396673837992592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5767094407038514245}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2800465913488875234}
+  - {fileID: 8853357743774286977}
+  m_Father: {fileID: 2401339627332618002}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

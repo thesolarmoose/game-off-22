@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1.11
+  bundleVersion: 0.1.21
   preloadedAssets:
   - {fileID: 11400000, guid: 2a139319d742d53458c9f90b88645631, type: 2}
   - {fileID: 11400000, guid: 07c62301ec2e2154ea2e140dce7f3344, type: 2}
@@ -162,9 +162,10 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.TheSolarMoose.GameOff2022
     Standalone: com.The-Solar-Moose.Game-Off-2022
   buildNumber:
-    Standalone: 0.1.11
+    Standalone: 0.1.21
     iPhone: 0
     tvOS: 0
   overrideDefaultApplicationIdentifier: 0
@@ -667,6 +668,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 1
   scriptingDefineSymbols:
+    Standalone: DOTWEEN_ENABLED
     WebGL: DOTWEEN_ENABLED
   additionalCompilerArguments: {}
   platformArchitecture: {}

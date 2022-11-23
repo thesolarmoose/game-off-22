@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: merchant_already_met
     m_Metadata:
       m_Items: []
+  - m_Id: 2574584091930624
+    m_Key: defaul-wrong-item
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

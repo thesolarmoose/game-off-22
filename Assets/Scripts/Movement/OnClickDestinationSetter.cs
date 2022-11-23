@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
@@ -25,10 +27,22 @@ namespace Movement
 
         private bool _shouldMove;
 
-        public UnityEvent OnMovementRequest
+        public async Task WaitForMovementRequest(CancellationToken ct)
         {
-            get => _onMovementRequest;
-            set => _onMovementRequest = value;
+            bool requested = false;
+
+            void OnRequest()
+            {
+                requested = true;
+                _onMovementRequest.RemoveListener(OnRequest);
+            }
+
+            _onMovementRequest.AddListener(OnRequest);
+
+            while (!requested && !ct.IsCancellationRequested)
+            {
+                await Task.Yield();
+            }
         }
         
         private void Start()

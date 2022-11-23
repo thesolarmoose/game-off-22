@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
 using TNRD;
+using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +11,8 @@ namespace Interactions
     {
         [SerializeField] private UnityEvent _onStartInteraction;
         [SerializeField] private UnityEvent _onFinishInteraction;
+
+        [SerializeField] private InteractableEventEvent _onInteractedEvent;
 
         [SerializeField] private List<SerializableInterface<IInteractionEvent>> _events;
 
@@ -36,6 +39,7 @@ namespace Interactions
             if (!_isRunning)
             {
                 _isRunning = true;
+                _onInteractedEvent.Raise(this);
                 _onStartInteraction.Invoke();
                 var ct = _cts.Token;
                 ExecuteEvents(ct);

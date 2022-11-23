@@ -1,0 +1,249 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211fcffc7051485f90a5009a9efedc4d, type: 3}
+  m_Name: Merchant-default
+  m_EditorClassIdentifier: 
+  _startLines:
+  - {fileID: 222664259699678785}
+  - {fileID: 5614301081175213054}
+  _lines:
+  - {fileID: 222664259699678785}
+  - {fileID: 5614301081175213054}
+  _linesConnections:
+    m_keys: []
+    m_values: []
+  _editorData:
+    _nodes:
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541210524483614
+      position: {x: 50.4, y: -118.4}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541210524483609
+      position: {x: 274.40002, y: 88}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541210524483613
+      position: {x: 274.40002, y: -172.8}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541210524483621
+      position: {x: 95.2, y: 148.8}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541210524483622
+      position: {x: -118.4, y: 148.8}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541210524483623
+      position: {x: 721.60004, y: 118.399994}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 805541210524483624
+      position: {x: 721.60004, y: 192.8}
+    _edges:
+    - inputNodeIndex: 1
+      inputPortIndex: 0
+      outputNodeIndex: -1
+      outputPortIndex: -1
+    - inputNodeIndex: 2
+      inputPortIndex: 0
+      outputNodeIndex: -1
+      outputPortIndex: -1
+    - inputNodeIndex: 2
+      inputPortIndex: 2
+      outputNodeIndex: 0
+      outputPortIndex: 0
+    - inputNodeIndex: 1
+      inputPortIndex: 2
+      outputNodeIndex: 3
+      outputPortIndex: 2
+    - inputNodeIndex: 3
+      inputPortIndex: 0
+      outputNodeIndex: 4
+      outputPortIndex: 0
+    - inputNodeIndex: 3
+      inputPortIndex: 1
+      outputNodeIndex: 4
+      outputPortIndex: 0
+    - inputNodeIndex: 5
+      inputPortIndex: 0
+      outputNodeIndex: 1
+      outputPortIndex: 3
+    - inputNodeIndex: 6
+      inputPortIndex: 0
+      outputNodeIndex: 1
+      outputPortIndex: 3
+  references:
+    version: 2
+    RefIds:
+    - rid: 805541210524483609
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 222664259699678785}
+    - rid: 805541210524483613
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 5614301081175213054}
+    - rid: 805541210524483614
+      type: {class: CheckNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _property: {fileID: 2872409648023527040, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+    - rid: 805541210524483621
+      type: {class: BooleanNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _booleanOperation: 3
+    - rid: 805541210524483622
+      type: {class: CheckNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _property: {fileID: 2872409648023527040, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+    - rid: 805541210524483623
+      type: {class: TriggerNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _property: {fileID: 5772085710611456833, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+    - rid: 805541210524483624
+      type: {class: TriggerNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _property: {fileID: 4026858448459551032, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+--- !u!114 &222664259699678785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
+  m_Name: Merchant_line-1
+  m_EditorClassIdentifier: 
+  _lineData:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483607
+  _check:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483625
+  _trigger:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483626
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 805541210524483607
+      type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _character: {fileID: 11400000, guid: 75e9d5c3361764c49a0b38c0333b9854, type: 2}
+        _dialogueText:
+          m_TableReference:
+            m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
+          m_TableEntryReference:
+            m_KeyId: 2174828818718720
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+    - rid: 805541210524483625
+      type: {class: BinaryCheck, ns: Dialogues.Core.Checks, asm: com.facticus.dialogues}
+      data:
+        _operation: 3
+        _checkA:
+          mode: 0
+          unityReference: {fileID: 2872409648023527040, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+          rawReference:
+            rid: -2
+        _checkB:
+          mode: 0
+          unityReference: {fileID: 2872409648023527040, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+          rawReference:
+            rid: -2
+    - rid: 805541210524483626
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers:
+        - {fileID: 5772085710611456833, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        - {fileID: 4026858448459551032, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+--- !u!114 &5614301081175213054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
+  m_Name: Merchant_line-2
+  m_EditorClassIdentifier: 
+  _lineData:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483611
+  _check:
+    mode: 0
+    unityReference: {fileID: 2872409648023527040, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+    rawReference:
+      rid: -2
+  _trigger:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483627
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 805541210524483611
+      type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _character: {fileID: 11400000, guid: 75e9d5c3361764c49a0b38c0333b9854, type: 2}
+        _dialogueText:
+          m_TableReference:
+            m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
+          m_TableEntryReference:
+            m_KeyId: 2176226411143168
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+    - rid: 805541210524483627
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers: []

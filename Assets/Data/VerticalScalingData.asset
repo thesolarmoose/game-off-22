@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b2662bfcd864f3486ecfb4c1fc05ddc, type: 3}
+  m_Name: VerticalScalingData
+  m_EditorClassIdentifier: 
+  _minScale: 0.2
+  _maxScale: 10
+  _scaleFactor: 0.26755852
+  _center: -0.16187291
