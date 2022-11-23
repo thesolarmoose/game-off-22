@@ -29,7 +29,7 @@ namespace Items
 
         public override void Initialize(Item model)
         {
-            
+            UpdateView(model);
         }
 
         public override void UpdateView(Item model)

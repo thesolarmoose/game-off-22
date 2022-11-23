@@ -20,10 +20,12 @@ namespace Interactions.Events
         public async Task<bool> ExecuteEvent(CancellationToken ct)
         {
             _clickMovementController.enabled = false;
+            // disable other interactables
 
             await Popups.ShowPopup(_dialoguePopupPrefab, _dialogue, ct);
             
             _clickMovementController.enabled = true;
+            // enable other interactables
             return true;
         }
     }
