@@ -55,7 +55,7 @@ namespace Items
             _openIcon.SetActive(false);
             await _inventory.ExecuteOpenAnimationAsync();
 
-            await WaitForCursorLeave(ct);
+            await WaitForCloseCondition(ct);
             // await any of
             //     cursor exit without selection
             //     interacted with item selected
@@ -65,19 +65,26 @@ namespace Items
             _openIcon.SetActive(true);
         }
 
-        private async Task WaitForCursorLeave(CancellationToken ct)
+        /// <summary>
+        /// Close condition: the cursor leaves the inventory and there is no item selected.
+        /// </summary>
+        /// <param name="ct"></param>
+        /// <returns></returns>
+        private async Task WaitForCloseCondition(CancellationToken ct)
         {
             var rayCastResults = new List<RaycastResult>();
             var eventSystem = EventSystem.current;
             var eventData = new PointerEventData(eventSystem);
 
             bool insideInventory = true;
-            while (insideInventory && !ct.IsCancellationRequested)
+            bool itemSelected = true;
+            while ((insideInventory || itemSelected) && !ct.IsCancellationRequested)
             {
                 var screenPosition = _pointAction.ReadValue<Vector2>();
                 eventData.position = screenPosition;
                 eventSystem.RaycastAll(eventData, rayCastResults);
                 insideInventory = rayCastResults.Any(rayCast => rayCast.gameObject == _inventoryRect.gameObject);
+                itemSelected = _inventory.ExistsItemSelected();
                 await Task.Yield();
             }
         }
