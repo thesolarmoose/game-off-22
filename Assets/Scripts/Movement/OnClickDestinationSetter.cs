@@ -23,7 +23,7 @@ namespace Movement
         private InputAction _pointAction;
         private InputAction _clickAction;
 
-        private bool _clickIsDown;
+        private bool _shouldMove;
 
         public UnityEvent OnMovementRequest
         {
@@ -48,7 +48,7 @@ namespace Movement
 
         private void Update()
         {
-            if (_clickIsDown)
+            if (_shouldMove)
             {
                 MoveToPointer();
             }
@@ -56,12 +56,14 @@ namespace Movement
 
         private void OnClick(InputAction.CallbackContext ctx)
         {
-            _clickIsDown = _clickAction.ReadValue<float>() > 0.5f;
-
-            if (_clickIsDown)
+            var clickDown = _clickAction.ReadValue<float>() > 0.5f;
+            _shouldMove = clickDown;
+            
+            if (clickDown)
             {
                 var screenPosition = _pointAction.ReadValue<Vector2>();
                 var ignore = ClickedOnIgnore(screenPosition);
+                _shouldMove = !ignore;
 
                 if (!ignore)
                 {
@@ -84,12 +86,12 @@ namespace Movement
             _destination.position = worldPosition;
         }
 
-        private bool ClickedOnIgnore(Vector2 worldPosition)
+        private bool ClickedOnIgnore(Vector2 cursorPos)
         {
             var eventSystem = EventSystem.current;
             var eventData = new PointerEventData(eventSystem)
             {
-                position = worldPosition
+                position = cursorPos
             };
             eventSystem.RaycastAll(eventData, _raycasts);
             if (_raycasts.Count > 0)
