@@ -1,19 +1,34 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
+using Utils.Input;
 
 namespace Items
 {
     public class InventoryUiOpener : MonoBehaviour
     {
         [SerializeField] private InventoryUi _inventory;
+        [SerializeField] private RectTransform _inventoryRect;
+        [SerializeField] private GameObject _openIcon;
 
+        private InputAction _pointAction;
         private CancellationTokenSource _cts;
+
+        private void Start()
+        {
+            _pointAction = InputActionUtils.GetPointAction();
+            _pointAction.Enable();
+        }
 
         private void OnEnable()
         {
             _cts = new CancellationTokenSource();
+            _pointAction?.Enable();
         }
 
         private void OnDisable()
@@ -24,6 +39,8 @@ namespace Items
             }
             
             _cts.Dispose();
+            
+            _pointAction?.Disable();
         }
 
         public void Open()
@@ -35,19 +52,34 @@ namespace Items
         private async void OpenAsync(CancellationToken ct)
         {
             // execute open animation
-            _inventory.enabled = true;
-            
+            _openIcon.SetActive(false);
+            await _inventory.ExecuteOpenAnimationAsync();
+
+            await WaitForCursorLeave(ct);
             // await any of
             //     cursor exit without selection
             //     interacted with item selected
             
             // execute close animation
-            _inventory.enabled = false;
+            await _inventory.ExecuteCloseAnimationAsync();
+            _openIcon.SetActive(true);
         }
 
-        private async Task WaitForCursorLeave()
+        private async Task WaitForCursorLeave(CancellationToken ct)
         {
-            
+            var rayCastResults = new List<RaycastResult>();
+            var eventSystem = EventSystem.current;
+            var eventData = new PointerEventData(eventSystem);
+
+            bool insideInventory = true;
+            while (insideInventory && !ct.IsCancellationRequested)
+            {
+                var screenPosition = _pointAction.ReadValue<Vector2>();
+                eventData.position = screenPosition;
+                eventSystem.RaycastAll(eventData, rayCastResults);
+                insideInventory = rayCastResults.Any(rayCast => rayCast.gameObject == _inventoryRect.gameObject);
+                await Task.Yield();
+            }
         }
     }
 }

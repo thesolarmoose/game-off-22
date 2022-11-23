@@ -1,21 +1,26 @@
-﻿using ModelView;
+﻿using BrunoMikoski.AnimationSequencer;
+using ModelView;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 namespace Items
 {
     public class ItemView : ViewBaseBehaviour<Item>, ISelectHandler, IDeselectHandler
     {
-        [SerializeField] private Button _button;
-
         [SerializeField] private UnityEvent _onSelectEvent;
         [SerializeField] private UnityEvent _onDeselectEvent;
 
+        [SerializeField] private AnimationSequencerController _addAnimation;
+        [SerializeField] private AnimationSequencerController _removeAnimation;
+        
         public UnityEvent OnSelectEvent => _onSelectEvent;
 
         public UnityEvent OnDeselectEvent => _onDeselectEvent;
+
+        public AnimationSequencerController AddAnimation => _addAnimation;
+
+        public AnimationSequencerController RemoveAnimation => _removeAnimation;
 
         public override bool CanRenderModel(Item model)
         {

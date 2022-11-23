@@ -1,4 +1,7 @@
-﻿using ModelView;
+﻿using System.Threading.Tasks;
+using BrunoMikoski.AnimationSequencer;
+using DG.Tweening;
+using ModelView;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
@@ -9,37 +12,91 @@ namespace Items
         [SerializeField] private ItemValueList _inventory;
         [SerializeField] private ViewList _viewList;
 
+        [SerializeField] private AnimationSequencerController _openAnimation;
+        [SerializeField] private AnimationSequencerController _closeAnimation;
+
+        private Item _currentSelected;
+        private bool _thereIsSelected;
+        
         private void Start()
+        {
+            RegisterInventoryListeners();
+        }
+
+        private void RegisterInventoryListeners()
         {
             _inventory.Added.Register(OnItemAdded);
             _inventory.Removed.Register(OnItemRemoved);
+        }
+        
+        private void UnregisterInventoryListeners()
+        {
+            _inventory.Added.Unregister(OnItemAdded);
+            _inventory.Removed.Unregister(OnItemRemoved);
         }
 
         private void OnItemAdded(Item item)
         {
             // list.add
             var view = _viewList.Add(item) as ItemView;
-            view.OnSelectEvent.AddListener(() => Debug.Log($"selected {gameObject.name}"));
-            view.OnDeselectEvent.AddListener(() => Debug.Log($"deselected {gameObject.name}"));
-            
-            // execute add animation
+            view.OnSelectEvent.AddListener(() => OnItemSelected(item));
+            view.OnDeselectEvent.AddListener(() => OnItemDeselected(item));
+
+            if (gameObject.activeInHierarchy)
+            {
+                // execute add animation
+                view.AddAnimation.Play();
+            }
         }
 
         private void OnItemRemoved(Item item)
         {
             // get view
-            // execute remove animation
-            // list.remove
+            var exists = _viewList.GetViewFromModel(item, out ItemView view);
+            if (exists)
+            {
+                if (gameObject.activeInHierarchy)
+                {
+                    // execute remove animation
+                    view.RemoveAnimation.Play();
+                }
+                // list.remove
+                _viewList.Remove(item);
+            }
+        }
+
+        private void OnItemSelected(Item item)
+        {
+            _currentSelected = item;
+            _thereIsSelected = true;
+        }
+        
+        private void OnItemDeselected(Item item)
+        {
+            _thereIsSelected = false;
+            _currentSelected = null;
+        }
+
+        public async Task ExecuteOpenAnimationAsync()
+        {
+            _openAnimation.Play();
+            await _openAnimation.PlayingSequence.AsyncWaitForCompletion();
+        }
+        
+        public async Task ExecuteCloseAnimationAsync()
+        {
+            _closeAnimation.Play();
+            await _closeAnimation.PlayingSequence.AsyncWaitForCompletion();
         }
 
         public bool ExistsItemSelected()
         {
-            return false;
+            return _thereIsSelected;
         }
 
         public Item GetSelectedItem()
         {
-            return default;
+            return _currentSelected;
         }
     }
 }
