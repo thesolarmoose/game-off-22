@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8640021068058066894
+--- !u!114 &-6086356473302304699
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Test2 (background music)
+  m_Name: event:/Distant Background
   m_EditorClassIdentifier: 
-  Path: event:/Sound Test2 (background music)
+  Path: event:/Distant Background
   Guid:
-    Data1: 543356748
-    Data2: 1261030642
-    Data3: -195716954
-    Data4: -981637010
+    Data1: 1821475339
+    Data2: 1202712443
+    Data3: -1818711929
+    Data4: -542116812
   Banks:
-  - {fileID: -5577635886414727410}
+  - {fileID: -832193719227211504}
   IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
+  Is3D: 0
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 89338
+  Length: 195000
 --- !u!114 &-5577635886414727410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/BG Music.bank
   Name: BG Music
   StudioPath: bank:/BG Music
-  lastModified: 638044748118835079
+  lastModified: 638049024545622903
   FileSizes:
   - Name: Desktop
-    Value: 2661824
+    Value: 494
   Exists: 1
 --- !u!114 &-2292381398163948335
 MonoBehaviour:
@@ -62,12 +62,12 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638044748118858471
+  lastModified: 638049024545973540
   FileSizes:
   - Name: Desktop
-    Value: 1016
+    Value: 1078
   Exists: 1
---- !u!114 &-704364667227964264
+--- !u!114 &-832193719227211504
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,24 +76,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Sound Test (background music)
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Bank A.bank
   m_EditorClassIdentifier: 
-  Path: event:/Sound Test (background music)
-  Guid:
-    Data1: -649844546
-    Data2: 1189554358
-    Data3: -126067014
-    Data4: -1188255980
-  Banks:
-  - {fileID: -5577635886414727410}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 224914
+  Path: FMOD_builds/Desktop/Bank A.bank
+  Name: Bank A
+  StudioPath: bank:/Bank A
+  lastModified: 638049024545959348
+  FileSizes:
+  - Name: Desktop
+    Value: 5601536
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,17 +104,19 @@ MonoBehaviour:
   - {fileID: -5577635886414727410}
   - {fileID: 924374723686725769}
   - {fileID: 1635142571376186666}
+  - {fileID: -832193719227211504}
   EditorEvents:
-  - {fileID: -8640021068058066894}
-  - {fileID: -704364667227964264}
   - {fileID: 5565225615691352009}
   - {fileID: 4816192417466661578}
+  - {fileID: -6086356473302304699}
+  - {fileID: 2075162362382314011}
+  - {fileID: 6943717017487915999}
   EditorParameters: []
   MasterBanks:
   - {fileID: 924374723686725769}
   StringsBanks:
   - {fileID: -2292381398163948335}
-  cacheTime: 638044748118878190
+  cacheTime: 638049024546013557
   cacheVersion: 131593
 --- !u!114 &924374723686725769
 MonoBehaviour:
@@ -158,11 +153,38 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638044748118878190
+  lastModified: 638049024546013557
   FileSizes:
   - Name: Desktop
-    Value: 91328
+    Value: 475680
   Exists: 1
+--- !u!114 &2075162362382314011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Close  Background
+  m_EditorClassIdentifier: 
+  Path: event:/Close  Background
+  Guid:
+    Data1: 1835161763
+    Data2: 1233945195
+    Data3: 1037902729
+    Data4: 108603158
+  Banks:
+  - {fileID: -832193719227211504}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 243695
 --- !u!114 &4816192417466661578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,3 +239,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1846
+--- !u!114 &6943717017487915999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Items
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Items
+  Guid:
+    Data1: -1242105668
+    Data2: 1294610671
+    Data3: 1654380972
+    Data4: 1991587693
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 36763

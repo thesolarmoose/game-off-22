@@ -49,15 +49,26 @@ namespace Interactions.Events
             // move the character to desired position
             var positionToMove = GetPositionToMove();
             _clickMovementController.transform.position = positionToMove;
-            
-            // wait to for path recalculation
-            while (_characterMover.reachedEndOfPath && !ct.IsCancellationRequested)
+
+            await WaitPathRecalculation(ct);
+
+            // wait to reach position
+            while (!_characterMover.reachedEndOfPath && !ct.IsCancellationRequested)
+            {
+                await Task.Yield();
+            }
+        }
+
+        private async Task WaitPathRecalculation(CancellationToken ct)
+        {
+            // wait for path recalculation
+            while (!_characterMover.pathPending && !ct.IsCancellationRequested)
             {
                 await Task.Yield();
             }
             
-            // wait to reach position
-            while (!_characterMover.reachedEndOfPath && !ct.IsCancellationRequested)
+            // wait for path recalculation is complete
+            while (_characterMover.pathPending && !ct.IsCancellationRequested)
             {
                 await Task.Yield();
             }

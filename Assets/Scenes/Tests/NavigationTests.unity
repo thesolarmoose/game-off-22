@@ -1761,7 +1761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8931247004084028320, guid: 92c3aee00a54c7844bf2a7b36c455832, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8931247004084028324, guid: 92c3aee00a54c7844bf2a7b36c455832, type: 3}
       propertyPath: m_Pivot.x
@@ -3088,8 +3088,8 @@ MonoBehaviour:
     mode: 2
     interval: 0.5
     sensitivity: 10
-    maximumInterval: 2
-    visualizeSensitivity: 0
+    maximumInterval: 1
+    visualizeSensitivity: 1
   targetCompatibility: {fileID: 0}
   maxAcceleration: 1000
   rotationSpeed: 360
@@ -3367,11 +3367,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -649844546
-      Data2: 1189554358
-      Data3: -126067014
-      Data4: -1188255980
-    Path: event:/Sound Test (background music)
+      Data1: 1835161763
+      Data2: 1233945195
+      Data3: 1037902729
+      Data4: 108603158
+    Path: event:/Close  Background
   Event: 
   PlayEvent: 1
   StopEvent: 0
