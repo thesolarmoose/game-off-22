@@ -354,6 +354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37f05560e3974705a9c7b8834898bff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _nameText: {fileID: 4483333075496434357}
   _onSelectEvent:
     m_PersistentCalls:
       m_Calls: []
