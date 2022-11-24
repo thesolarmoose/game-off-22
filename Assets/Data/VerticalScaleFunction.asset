@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b2662bfcd864f3486ecfb4c1fc05ddc, type: 3}
-  m_Name: VerticalScalingData
+  m_Name: VerticalScaleFunction
   m_EditorClassIdentifier: 
-  _minScale: 0.2
-  _maxScale: 10
-  _scaleFactor: 0.26755852
-  _center: -0.16187291
+  _minValue: 0.2
+  _maxValue: 10
+  _slope: 0.2675585
+  _offset: 1

@@ -39,7 +39,7 @@ namespace Items
             UpdateViewAsync(model);
         }
 
-        public async void UpdateViewAsync(Item model)
+        private async void UpdateViewAsync(Item model)
         {
             _nameText.text = "";
             var itemName = await model.ItemName.GetLocalizedStringAsync().Task;
