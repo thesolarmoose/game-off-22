@@ -180,7 +180,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2401339627332618003}
           m_TargetAssemblyTypeName: Interactions.InteractableEvent, com.thesolarmoose.name
-          m_MethodName: StartInteraction
+          m_MethodName: NotifyInteraction
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

@@ -128,36 +128,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4effa27eae38714daa80b0d6a9f4890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _onStartInteraction:
+  _onStartEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2401339627332618012}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _onFinishInteraction:
+      m_Calls: []
+  _onFinishEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2401339627332618012}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
   _onInteractedEvent: {fileID: 11400000, guid: a2a0f8604f806484aaa309a88fb9b8a2, type: 2}
   _events:
   - mode: 0
@@ -248,8 +224,8 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 2401339627332618003}
           m_TargetAssemblyTypeName: Interactions.InteractableEvent, com.thesolarmoose.name
-          m_MethodName: StartInteraction
-          m_Mode: 1
+          m_MethodName: NotifyInteraction
+          m_Mode: 0
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

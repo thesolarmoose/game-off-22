@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using AsyncUtils;
 using Dialogues.Core;
 using Dialogues.UI;
+using Items;
 using Movement;
 using UnityEngine;
 using Utils.Attributes;
@@ -17,7 +18,7 @@ namespace Interactions.Events
         [SerializeField] private Dialogue _dialogue;
         [SerializeField] private DialoguePopup _dialoguePopupPrefab;
         
-        public async Task<bool> ExecuteEvent(CancellationToken ct)
+        public async Task<bool> ExecuteEvent(Item item, CancellationToken ct)
         {
             _clickMovementController.enabled = false;
             // disable other interactables

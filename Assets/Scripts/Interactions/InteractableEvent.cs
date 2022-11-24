@@ -1,64 +1,49 @@
 ﻿using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
+using Items;
 using TNRD;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace Interactions
 {
     public class InteractableEvent : MonoBehaviour
     {
-        [SerializeField] private UnityEvent _onStartInteraction;
-        [SerializeField] private UnityEvent _onFinishInteraction;
+        [SerializeField] private UnityEvent _onStartEvent;
+        [SerializeField] private UnityEvent _onFinishEvent;
 
         [SerializeField] private InteractableEventEvent _onInteractedEvent;
 
         [SerializeField] private List<SerializableInterface<IInteractionEvent>> _events;
 
-        private CancellationTokenSource _cts;
-        private bool _isRunning;
-
-        private void OnEnable()
+        public void NotifyInteraction(BaseEventData data)
         {
-            _cts = new CancellationTokenSource();
+            if (data is PointerEventData p)
+            {
+                if (p.button == PointerEventData.InputButton.Left)
+                {
+                    _onInteractedEvent.Raise(this);
+                }
+            }
         }
 
-        private void OnDisable()
+        public async Task ExecuteEvents(Item item, CancellationToken ct)
         {
-            if (!_cts.IsCancellationRequested)
-            {
-                _cts.Cancel();
-            }
+            _onStartEvent.Invoke();
             
-            _cts.Dispose();
-        }
-
-        public void StartInteraction()
-        {
-            if (!_isRunning)
-            {
-                _isRunning = true;
-                _onInteractedEvent.Raise(this);
-                _onStartInteraction.Invoke();
-                var ct = _cts.Token;
-                ExecuteEvents(ct);
-            }
-        }
-
-        private async void ExecuteEvents(CancellationToken ct)
-        {
             foreach (var @event in _events)
             {
-                var shouldContinue = await @event.Value.ExecuteEvent(ct);
+                var shouldContinue = await @event.Value.ExecuteEvent(item, ct);
                 if (!shouldContinue)
                 {
                     break;
                 }
             }
 
-            _onFinishInteraction.Invoke();
-            _isRunning = false;
+            _onFinishEvent.Invoke();
         }
     }
 }

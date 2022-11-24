@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
+using Items;
 using Movement;
 using Pathfinding;
 using UnityEngine;
@@ -18,7 +19,7 @@ namespace Interactions.Events
         [SerializeField] private Transform _leftPosition;
         [SerializeField] private Transform _rightPosition;
 
-        public async Task<bool> ExecuteEvent(CancellationToken ct)
+        public async Task<bool> ExecuteEvent(Item item, CancellationToken ct)
         {
             var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
             var linkedCt = linkedCts.Token;

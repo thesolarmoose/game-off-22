@@ -18,13 +18,13 @@ namespace Interactions.Events
         [SerializeField] private List<SerializableInterface<IInteractionEvent>> _wrongItemSelectedEvents;
         [SerializeField] private List<ItemSelectedEvent> _itemSelectedEvents;
         
-        public async Task<bool> ExecuteEvent(CancellationToken ct)
+        public async Task<bool> ExecuteEvent(Item item, CancellationToken ct)
         {
-            var events = GetAppropriateEvent();
+            var events = GetAppropriateEvent(item);
             bool shouldContinue = true;
             foreach (var @event in events)
             {
-                shouldContinue = await @event.ExecuteEvent(ct);
+                shouldContinue = await @event.ExecuteEvent(item, ct);
                 if (!shouldContinue)
                 {
                     break;
@@ -34,18 +34,16 @@ namespace Interactions.Events
             return shouldContinue;
         }
 
-        private List<IInteractionEvent> GetAppropriateEvent()
+        private List<IInteractionEvent> GetAppropriateEvent(Item item)
         {
-            bool thereIsItemSelected = _inventory.ExistsItemSelected();
             var serializableEvents = _noItemSelectedEvents;
             
-            if (thereIsItemSelected)
+            if (item != null)
             {
-                var selectedItem = _inventory.GetSelectedItem();
-                var exists = _itemSelectedEvents.Exists(itemEvent => itemEvent.EvaluateItem(selectedItem));
+                var exists = _itemSelectedEvents.Exists(itemEvent => itemEvent.EvaluateItem(item));
                 if (exists)
                 {
-                    var @event = _itemSelectedEvents.First(itemEvent => itemEvent.EvaluateItem(selectedItem));
+                    var @event = _itemSelectedEvents.First(itemEvent => itemEvent.EvaluateItem(item));
                     serializableEvents = @event.Events;
                 }
                 else

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using BrunoMikoski.AnimationSequencer;
 using DG.Tweening;
 using ModelView;
-using Movement;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -21,25 +20,23 @@ namespace Items
         [SerializeField] private ViewList _viewList;
         [SerializeField] private RectTransform _inventoryRect;
 
-        [SerializeField] private InteractableEventEvent _onInteractedEvent;
-
         [SerializeField] private AnimationSequencerController _openAnimation;
         [SerializeField] private AnimationSequencerController _closeAnimation;
-
-        private Action<Item> _onItemSelected;
-        private Action<Item> _onItemDeselected;
         
         private InputAction _pointAction;
-        private bool _opened;
-        private Item _currentSelected;
+        private bool _isOpened;
+        private Item _currentItemSelected;
         private bool _thereIsSelected;
-        
+
+        public bool IsOpened => _isOpened;
+
+        public Item CurrentItemSelected => _currentItemSelected;
+
         private void Start()
         {
             RegisterInventoryListeners();
             _pointAction = InputActionUtils.GetPointAction();
             _pointAction.Enable();
-            _onInteractedEvent.Register(evt => Debug.Log("interacted"));
         }
 
         private void OnEnable()
@@ -57,12 +54,6 @@ namespace Items
             _inventory.Added.Register(OnItemAdded);
             _inventory.Removed.Register(OnItemRemoved);
         }
-        
-        private void UnregisterInventoryListeners()
-        {
-            _inventory.Added.Unregister(OnItemAdded);
-            _inventory.Removed.Unregister(OnItemRemoved);
-        }
 
         private void OnItemAdded(Item item)
         {
@@ -71,7 +62,7 @@ namespace Items
             view.OnSelectEvent.AddListener(() => OnItemSelected(item));
             view.OnDeselectEvent.AddListener(() => OnItemDeselected(item));
 
-            if (_opened)
+            if (_isOpened)
             {
                 // execute add animation
                 view.AddAnimation.Play();
@@ -84,7 +75,7 @@ namespace Items
             var exists = _viewList.GetViewFromModel(item, out ItemView view);
             if (exists)
             {
-                if (_opened)
+                if (_isOpened)
                 {
                     // execute remove animation
                     view.RemoveAnimation.Play();
@@ -96,26 +87,29 @@ namespace Items
 
         private void OnItemSelected(Item item)
         {
-            _onItemSelected?.Invoke(item);
+            _thereIsSelected = true;
+            _currentItemSelected = item;
         }
         
         private void OnItemDeselected(Item item)
         {
-            _onItemDeselected?.Invoke(item);
+            _thereIsSelected = false;
+            if (IsPointerInsideInventory())
+            {
+                _currentItemSelected = null;
+            }
         }
 
         private async Task ExecuteOpenAnimationAsync()
         {
             _openAnimation.Play();
             await _openAnimation.PlayingSequence.AsyncWaitForCompletion();
-            _opened = true;
         }
         
         private async Task ExecuteCloseAnimationAsync()
         {
             _closeAnimation.Play();
             await _closeAnimation.PlayingSequence.AsyncWaitForCompletion();
-            _opened = false;
         }
 
         /// <summary>
@@ -133,105 +127,39 @@ namespace Items
             bool itemSelected = true;
             while ((insideInventory || itemSelected) && !ct.IsCancellationRequested)
             {
-                var screenPosition = _pointAction.ReadValue<Vector2>();
-                eventData.position = screenPosition;
-                eventSystem.RaycastAll(eventData, rayCastResults);
-                insideInventory = rayCastResults.Any(rayCast => rayCast.gameObject == _inventoryRect.gameObject);
-                itemSelected = ExistsItemSelected();
+                insideInventory = IsPointerInsideInventory(eventData, eventSystem, rayCastResults);
+                itemSelected = _thereIsSelected;
                 await Task.Yield();
             }
         }
 
-        private async void EnsureButtonSelection(CancellationToken ct)
+        private bool IsPointerInsideInventory()
         {
-            while (!ct.IsCancellationRequested)
-            {
-                var item = await WaitItemSelectedAction(ct);
-                if (item != null)
-                {
-                    _thereIsSelected = true;
-                    _currentSelected = item;
-                }
-                var deselected = await WaitItemDeselectedAction(ct);
-                if (deselected != null)
-                {
-                    _thereIsSelected = false;
-                    _currentSelected = null;
-                    Debug.Log("deselected");
-                }
-            }
-        }
-
-        private async Task<Item> WaitItemSelectedAction(CancellationToken ct)
-        {
-            var item = await WaitItemAction(() => _onItemSelected, (action) => _onItemSelected = action, ct);
-            return item;
+            var rayCastResults = new List<RaycastResult>();
+            var eventSystem = EventSystem.current;
+            var eventData = new PointerEventData(eventSystem);
+            return IsPointerInsideInventory(eventData, eventSystem, rayCastResults);
         }
         
-        private async Task<Item> WaitItemDeselectedAction(CancellationToken ct)
+        private bool IsPointerInsideInventory(PointerEventData eventData, EventSystem eventSystem, List<RaycastResult> rayCastResults)
         {
-            var item = await WaitItemAction(() => _onItemDeselected, (action) => _onItemDeselected = action, ct);
-            return item;
-        }
-
-        private async Task<Item> WaitItemAction(Func<Action<Item>> getAction, Action<Action<Item>> setAction, CancellationToken ct)
-        {
-            bool triggered = false;
-            Item triggeredItem = null;
-            void OnButtonDeselected(Item item)
-            {
-                triggered = true;
-                triggeredItem = item;
-            }
-
-            var action = getAction();
-            action += OnButtonDeselected;
-            setAction.Invoke(action);
-            while (!ct.IsCancellationRequested && !triggered)
-            {
-                await Task.Yield();
-            }
-
-            action -= OnButtonDeselected;
-            setAction.Invoke(action);
-
-            if (triggered)
-            {
-                return triggeredItem;
-            }
-
-            return null;
+            var screenPosition = _pointAction.ReadValue<Vector2>();
+            eventData.position = screenPosition;
+            eventSystem.RaycastAll(eventData, rayCastResults);
+            bool insideInventory = rayCastResults.Any(rayCast => rayCast.gameObject == _inventoryRect.gameObject);
+            return insideInventory;
         }
         
         public async Task OpenInventory(CancellationToken ct)
         {
+            _currentItemSelected = null;
+            _isOpened = true;
             await ExecuteOpenAnimationAsync();
-
-            var selectionCts = CancellationTokenSource.CreateLinkedTokenSource(ct);
-            var selectionCt = selectionCts.Token;
-
-            try
-            {
-                EnsureButtonSelection(selectionCt);
-                await WaitForCloseCondition(ct);
-                selectionCts.Cancel();
-            }
-            finally
-            {
-                selectionCts.Dispose();
-            }
+            
+            await WaitForCloseCondition(ct);
             
             await ExecuteCloseAnimationAsync();
-        }
-
-        public bool ExistsItemSelected()
-        {
-            return _thereIsSelected;
-        }
-
-        public Item GetSelectedItem()
-        {
-            return _currentSelected;
+            _isOpened = false;
         }
     }
 }
