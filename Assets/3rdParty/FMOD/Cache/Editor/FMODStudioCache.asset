@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7940435435568777435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Cuchillon
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Cuchillon
+  Guid:
+    Data1: -930663864
+    Data2: 1340404588
+    Data3: -1983550299
+    Data4: 2068250904
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
 --- !u!114 &-6086356473302304699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26,7 +54,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 195000
+  Length: 187000
 --- !u!114 &-5577635886414727410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42,11 +70,115 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/BG Music.bank
   Name: BG Music
   StudioPath: bank:/BG Music
-  lastModified: 638049024545622903
+  lastModified: 638049980560725381
   FileSizes:
   - Name: Desktop
     Value: 494
   Exists: 1
+--- !u!114 &-5544577061418155987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Usar Items.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD_builds/Desktop/Usar Items.bank
+  Name: Usar Items
+  StudioPath: bank:/Usar Items
+  lastModified: 638049980561691430
+  FileSizes:
+  - Name: Desktop
+    Value: 391872
+  Exists: 1
+--- !u!114 &-4959856117450879756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Diamante
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Diamante
+  Guid:
+    Data1: 827003035
+    Data2: 1301584176
+    Data3: -1153734736
+    Data4: -592112628
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &-4717525033863220543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Martillo
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Martillo
+  Guid:
+    Data1: -2139490995
+    Data2: 1079564394
+    Data3: 471278005
+    Data4: -1861756145
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
+--- !u!114 &-3159472993499950509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar  Comida
+  m_EditorClassIdentifier: 
+  Path: event:/Usar  Comida
+  Guid:
+    Data1: 260881466
+    Data2: 1307840804
+    Data3: 1428137648
+    Data4: 630589930
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3720
 --- !u!114 &-2292381398163948335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,10 +194,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638049024545973540
+  lastModified: 638049980560938264
   FileSizes:
   - Name: Desktop
-    Value: 1078
+    Value: 1456
   Exists: 1
 --- !u!114 &-832193719227211504
 MonoBehaviour:
@@ -82,11 +214,67 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638049024545959348
+  lastModified: 638049980560705382
   FileSizes:
   - Name: Desktop
-    Value: 5601536
+    Value: 5589856
   Exists: 1
+--- !u!114 &-603927991018004334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Pastillas
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Pastillas
+  Guid:
+    Data1: 1182982232
+    Data2: 1124816478
+    Data3: 1935720858
+    Data4: 1373371573
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3660
+--- !u!114 &-177982007337806862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Tarjeta
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Tarjeta
+  Guid:
+    Data1: 494488235
+    Data2: 1115910192
+    Data3: -807866195
+    Data4: -838096644
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3680
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,18 +293,27 @@ MonoBehaviour:
   - {fileID: 924374723686725769}
   - {fileID: 1635142571376186666}
   - {fileID: -832193719227211504}
+  - {fileID: -5544577061418155987}
   EditorEvents:
   - {fileID: 5565225615691352009}
   - {fileID: 4816192417466661578}
   - {fileID: -6086356473302304699}
   - {fileID: 2075162362382314011}
-  - {fileID: 6943717017487915999}
+  - {fileID: 4385492012285611365}
+  - {fileID: -3159472993499950509}
+  - {fileID: -7940435435568777435}
+  - {fileID: -4717525033863220543}
+  - {fileID: -603927991018004334}
+  - {fileID: -4959856117450879756}
+  - {fileID: -177982007337806862}
+  - {fileID: 5441234177687832861}
+  - {fileID: 6193238274843340440}
   EditorParameters: []
   MasterBanks:
   - {fileID: 924374723686725769}
   StringsBanks:
   - {fileID: -2292381398163948335}
-  cacheTime: 638049024546013557
+  cacheTime: 638049980561691430
   cacheVersion: 131593
 --- !u!114 &924374723686725769
 MonoBehaviour:
@@ -133,10 +330,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638044748118842585
+  lastModified: 638049980560915470
   FileSizes:
   - Name: Desktop
-    Value: 7200
+    Value: 7424
   Exists: 1
 --- !u!114 &1635142571376186666
 MonoBehaviour:
@@ -153,10 +350,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638049024546013557
+  lastModified: 638049980561385831
   FileSizes:
   - Name: Desktop
-    Value: 475680
+    Value: 482496
   Exists: 1
 --- !u!114 &2075162362382314011
 MonoBehaviour:
@@ -184,7 +381,35 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 243695
+  Length: 243748
+--- !u!114 &4385492012285611365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Reloj
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Reloj
+  Guid:
+    Data1: 1821136659
+    Data2: 1341637287
+    Data3: 1889108875
+    Data4: -1784957293
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3703
 --- !u!114 &4816192417466661578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,6 +437,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &5441234177687832861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Usar Moneda
+  m_EditorClassIdentifier: 
+  Path: event:/Usar Moneda
+  Guid:
+    Data1: -1242105668
+    Data2: 1294610671
+    Data3: 1654380972
+    Data4: 1991587693
+  Banks:
+  - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3700
 --- !u!114 &5565225615691352009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,12 +487,12 @@ MonoBehaviour:
   - {fileID: 924374723686725769}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
   Length: 1846
---- !u!114 &6943717017487915999
+--- !u!114 &6193238274843340440
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -249,20 +502,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Usar Items
+  m_Name: event:/Usar Cuchillo
   m_EditorClassIdentifier: 
-  Path: event:/Usar Items
+  Path: event:/Usar Cuchillo
   Guid:
-    Data1: -1242105668
-    Data2: 1294610671
-    Data3: 1654380972
-    Data4: 1991587693
+    Data1: -1672547376
+    Data2: 1220333119
+    Data3: 910459037
+    Data4: -1419081499
   Banks:
   - {fileID: 1635142571376186666}
+  - {fileID: -5544577061418155987}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 36763
+  Length: 3700
