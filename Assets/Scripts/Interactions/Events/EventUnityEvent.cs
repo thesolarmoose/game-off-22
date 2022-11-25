@@ -16,6 +16,8 @@ namespace Interactions.Events
         {
             _event.Invoke();
 
+            await Task.Yield();
+
             return true;
         }
     }
