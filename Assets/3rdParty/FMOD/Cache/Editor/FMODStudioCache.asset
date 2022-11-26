@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8366587276548736201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir  Comida
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir  Comida
+  Guid:
+    Data1: 873395762
+    Data2: 1181228293
+    Data3: 583903104
+    Data4: -1144094652
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1846
+--- !u!114 &-8139680569780462988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Diamante
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Diamante
+  Guid:
+    Data1: -436187638
+    Data2: 1282050468
+    Data3: -1240185181
+    Data4: -1634793442
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3304
 --- !u!114 &-7940435435568777435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +82,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
+--- !u!114 &-6835389582874344990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Pastillas
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Pastillas
+  Guid:
+    Data1: -1433927099
+    Data2: 1106965094
+    Data3: 1851695752
+    Data4: 1349669332
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1846
+--- !u!114 &-6272705639121398234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Cuchillon
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Cuchillon
+  Guid:
+    Data1: -794568638
+    Data2: 1243533385
+    Data3: 1278907813
+    Data4: -407182240
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
 --- !u!114 &-6086356473302304699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +178,7 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/BG Music.bank
   Name: BG Music
   StudioPath: bank:/BG Music
-  lastModified: 638049980560725381
+  lastModified: 638051059478933221
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -90,10 +198,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Usar Items.bank
   Name: Usar Items
   StudioPath: bank:/Usar Items
-  lastModified: 638049980561691430
+  lastModified: 638051059480118040
   FileSizes:
   - Name: Desktop
-    Value: 391872
+    Value: 411552
   Exists: 1
 --- !u!114 &-4959856117450879756
 MonoBehaviour:
@@ -123,6 +231,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
+--- !u!114 &-4904332855778417563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Moneda
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Moneda
+  Guid:
+    Data1: -1577182904
+    Data2: 1293556416
+    Data3: -150979660
+    Data4: -816332027
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3600
 --- !u!114 &-4717525033863220543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +286,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
+--- !u!114 &-4045487750080118088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Martillo
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Martillo
+  Guid:
+    Data1: 1409899563
+    Data2: 1083966312
+    Data3: -984164418
+    Data4: 53660548
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
 --- !u!114 &-3159472993499950509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,7 +340,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 3720
+  Length: 2750
 --- !u!114 &-2292381398163948335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,11 +356,38 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638049980560938264
+  lastModified: 638051059479138351
   FileSizes:
   - Name: Desktop
-    Value: 1456
+    Value: 1848
   Exists: 1
+--- !u!114 &-1298957530147052180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Reloj
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Reloj
+  Guid:
+    Data1: 703025404
+    Data2: 1298138540
+    Data3: 407453582
+    Data4: 168665718
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4263
 --- !u!114 &-832193719227211504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +403,7 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638049980560705382
+  lastModified: 638051059478917863
   FileSizes:
   - Name: Desktop
     Value: 5589856
@@ -308,13 +497,49 @@ MonoBehaviour:
   - {fileID: -177982007337806862}
   - {fileID: 5441234177687832861}
   - {fileID: 6193238274843340440}
+  - {fileID: -8139680569780462988}
+  - {fileID: -4045487750080118088}
+  - {fileID: -8366587276548736201}
+  - {fileID: -6272705639121398234}
+  - {fileID: -6835389582874344990}
+  - {fileID: -4904332855778417563}
+  - {fileID: 4713204354330345328}
+  - {fileID: 751237628216638071}
+  - {fileID: -1298957530147052180}
   EditorParameters: []
   MasterBanks:
   - {fileID: 924374723686725769}
   StringsBanks:
   - {fileID: -2292381398163948335}
-  cacheTime: 638049980561691430
+  cacheTime: 638051059480118040
   cacheVersion: 131593
+--- !u!114 &751237628216638071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Cuchillo
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Cuchillo
+  Guid:
+    Data1: 1978601140
+    Data2: 1281059617
+    Data3: 1853915057
+    Data4: 2004082634
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &924374723686725769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -330,7 +555,7 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638049980560915470
+  lastModified: 638051059479116475
   FileSizes:
   - Name: Desktop
     Value: 7424
@@ -350,10 +575,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638049980561385831
+  lastModified: 638051059479874960
   FileSizes:
   - Name: Desktop
-    Value: 482496
+    Value: 770560
   Exists: 1
 --- !u!114 &2075162362382314011
 MonoBehaviour:
@@ -410,6 +635,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3703
+--- !u!114 &4713204354330345328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Conseguir Tarjeta
+  m_EditorClassIdentifier: 
+  Path: event:/Conseguir Tarjeta
+  Guid:
+    Data1: -231642532
+    Data2: 1168044820
+    Data3: -1272695413
+    Data4: 1216079378
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1300
 --- !u!114 &4816192417466661578
 MonoBehaviour:
   m_ObjectHideFlags: 0
