@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211fcffc7051485f90a5009a9efedc4d, type: 3}
+  m_Name: Interact-ClockGuy-default
+  m_EditorClassIdentifier: 
+  _startLines:
+  - {fileID: 8494850552220908258}
+  - {fileID: 3971693653983106815}
+  _lines:
+  - {fileID: 8494850552220908258}
+  - {fileID: 3971693653983106815}
+  _linesConnections:
+    m_keys: []
+    m_values: []
+  _editorData:
+    _nodes:
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506541278298157
+      position: {x: 314.40002, y: -233.6}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506541278298158
+      position: {x: 80, y: -165.6}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506541278298159
+      position: {x: -122.4, y: -165.6}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506541278298160
+      position: {x: 314.40002, y: 135.2}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506541278298161
+      position: {x: 80, y: 205.6}
+    _edges:
+    - inputNodeIndex: 0
+      inputPortIndex: 0
+      outputNodeIndex: -1
+      outputPortIndex: -1
+    - inputNodeIndex: 3
+      inputPortIndex: 0
+      outputNodeIndex: -1
+      outputPortIndex: -1
+    - inputNodeIndex: 0
+      inputPortIndex: 2
+      outputNodeIndex: 1
+      outputPortIndex: 2
+    - inputNodeIndex: 1
+      inputPortIndex: 0
+      outputNodeIndex: 2
+      outputPortIndex: 0
+    - inputNodeIndex: 1
+      inputPortIndex: 1
+      outputNodeIndex: 2
+      outputPortIndex: 0
+    - inputNodeIndex: 3
+      inputPortIndex: 2
+      outputNodeIndex: 4
+      outputPortIndex: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298157
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 8494850552220908258}
+    - rid: 398506541278298158
+      type: {class: BooleanNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _booleanOperation: 3
+    - rid: 398506541278298159
+      type: {class: CheckNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _property: {fileID: 7434654520407988855, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+    - rid: 398506541278298160
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 3971693653983106815}
+    - rid: 398506541278298161
+      type: {class: CheckNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _property: {fileID: 7434654520407988855, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+--- !u!114 &3971693653983106815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
+  m_Name: Interact-ClockGuy-default_line-2
+  m_EditorClassIdentifier: 
+  _lineData:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483611
+  _check:
+    mode: 0
+    unityReference: {fileID: 7434654520407988855, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+    rawReference:
+      rid: -2
+  _trigger:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298162
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 398506541278298162
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers: []
+    - rid: 805541210524483611
+      type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _character: {fileID: 11400000, guid: 6f0da8ec5ffa3a54ebe8d101d455b1f5, type: 2}
+        _dialogueText:
+          m_TableReference:
+            m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
+          m_TableEntryReference:
+            m_KeyId: 4349044607410176
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+--- !u!114 &8494850552220908258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
+  m_Name: Interact-ClockGuy-default_line-1
+  m_EditorClassIdentifier: 
+  _lineData:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483607
+  _check:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298163
+  _trigger:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298164
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 398506541278298163
+      type: {class: BinaryCheck, ns: Dialogues.Core.Checks, asm: com.facticus.dialogues}
+      data:
+        _operation: 3
+        _checkA:
+          mode: 0
+          unityReference: {fileID: 7434654520407988855, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+          rawReference:
+            rid: -2
+        _checkB:
+          mode: 0
+          unityReference: {fileID: 7434654520407988855, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+          rawReference:
+            rid: -2
+    - rid: 398506541278298164
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers: []
+    - rid: 805541210524483607
+      type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _character: {fileID: 11400000, guid: 6f0da8ec5ffa3a54ebe8d101d455b1f5, type: 2}
+        _dialogueText:
+          m_TableReference:
+            m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
+          m_TableEntryReference:
+            m_KeyId: 4348401071153152
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []

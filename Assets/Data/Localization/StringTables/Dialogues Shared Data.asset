@@ -35,6 +35,102 @@ MonoBehaviour:
     m_Key: defaul-wrong-item
     m_Metadata:
       m_Items: []
+  - m_Id: 4348401071153152
+    m_Key: clockguy-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4348462987468800
+    m_Key: clockguy-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4349044607410176
+    m_Key: clockguy-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357043719757824
+    m_Key: blacksmith-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357138414559232
+    m_Key: blacksmith-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357180688949248
+    m_Key: blacksmith-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357217166811136
+    m_Key: damsel-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357303535919104
+    m_Key: damsel-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357342027046912
+    m_Key: damsel-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357372653854720
+    m_Key: herbalist-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357473623334912
+    m_Key: herbalist-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357501607731200
+    m_Key: herbalist-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357531072716800
+    m_Key: jar-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357566300676096
+    m_Key: jar-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357599787999232
+    m_Key: jar-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357642976747520
+    m_Key: judge-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357674748600320
+    m_Key: judge-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357697662083072
+    m_Key: judge-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357881750085632
+    m_Key: oldman-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357908690100224
+    m_Key: oldman-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357942814957568
+    m_Key: oldman-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357978449764352
+    m_Key: villain-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4358022678700032
+    m_Key: villain-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4358049421582336
+    m_Key: villain-solved
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

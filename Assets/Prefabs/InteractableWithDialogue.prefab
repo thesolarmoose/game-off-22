@@ -163,7 +163,13 @@ MonoBehaviour:
           unityReference: {fileID: 8266325930956989495}
           rawReference:
             rid: -2
-        _itemSelectedEvents: []
+        _itemSelectedEvents:
+        - _item: {fileID: 0}
+          _events:
+          - mode: 0
+            unityReference: {fileID: 2816104249378573528}
+            rawReference:
+              rid: -2
 --- !u!114 &2401339627332618014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -607,6 +613,53 @@ MonoBehaviour:
   _characterMover: {fileID: 0}
   _leftPosition: {fileID: 2401339627410172086}
   _rightPosition: {fileID: 2401339627246372392}
+--- !u!1 &2980312070387391341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8745759447631033461}
+  - component: {fileID: 2816104249378573528}
+  m_Layer: 7
+  m_Name: EventCorrectItemSelectedDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8745759447631033461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980312070387391341}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9122396673837992592}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2816104249378573528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980312070387391341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f606a0c8bec14c7db6d395e6aba8af9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clickMovementController: {fileID: 0}
+  _dialogue: {fileID: 0}
+  _dialoguePopupPrefab: {fileID: 4055957975859761653, guid: a43f12cf6ab39c646ae1dfa4b0b00c8b, type: 3}
 --- !u!1 &4262182991613304508
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +737,7 @@ Transform:
   m_Children:
   - {fileID: 2800465913488875234}
   - {fileID: 8853357743774286977}
+  - {fileID: 8745759447631033461}
   m_Father: {fileID: 2401339627332618002}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

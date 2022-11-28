@@ -1,5 +1,238 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8866508488238401989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_blacksmith-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298394
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298394
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 15e96d000704b5b4db30451b7f264581, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
+--- !u!114 &-8602257747353773970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_oldman-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298400
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298400
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 66f01bce11184234eb26c651bf3e493f, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
+--- !u!114 &-6873936195536447799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_herbalist-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298397
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298397
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 87686db8c2c3b0b41ba26c4fa2304799, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
+--- !u!114 &-6512585132758971338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-jar
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 6994e06003af2e74089ffb5f6abfe1cf, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d55b238109e7b384694b3ecba264e667, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &-5709614153063430218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-oldman
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 66f01bce11184234eb26c651bf3e493f, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &-4002771435026503836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-villain
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 3f9e1daf5aced1b42970d68c1aff97b7, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: aec1b6f4e2a882c438e54ca1a4464dca, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &-1329584146368973337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_judge-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298399
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298399
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 123de4eecd173a2419070e5eabb2c5ab, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,9 +247,159 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _checks:
   - {fileID: 2872409648023527040}
+  - {fileID: 7434654520407988855}
+  - {fileID: -8866508488238401989}
+  - {fileID: 6379798340902402518}
+  - {fileID: -6873936195536447799}
+  - {fileID: 7860390995035024994}
+  - {fileID: -1329584146368973337}
+  - {fileID: -8602257747353773970}
+  - {fileID: 1618042034171534218}
   _triggers:
   - {fileID: 5772085710611456833}
   - {fileID: 4026858448459551032}
+  - {fileID: 4185145916751109119}
+  - {fileID: 4121082303106417901}
+  - {fileID: 513222974387435354}
+  - {fileID: 1275247422683522537}
+  - {fileID: -6512585132758971338}
+  - {fileID: 7734665496560866632}
+  - {fileID: -5709614153063430218}
+  - {fileID: -4002771435026503836}
+--- !u!114 &513222974387435354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-damsel
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: d8f42f9e5fe29bd4680ced2c5dbb8bc8, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: faf5e358fbfdfe0459e7f3241cea866a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.BaseAtoms.ItemValueList, com.thesolarmoose.name
+        m_MethodName: RemoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 271f36c078dd5024a9f59197361166c8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1275247422683522537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-herbalist
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 87686db8c2c3b0b41ba26c4fa2304799, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 68016a8ce7132f540bbd5edc9d203e82, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.BaseAtoms.ItemValueList, com.thesolarmoose.name
+        m_MethodName: RemoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 20b631fab10e3c44db0e4e50d9571b1d, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1618042034171534218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_villain-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298401
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298401
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 3f9e1daf5aced1b42970d68c1aff97b7, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
 --- !u!114 &2872409648023527040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +471,120 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4121082303106417901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-blacksmith
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 15e96d000704b5b4db30451b7f264581, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 20b631fab10e3c44db0e4e50d9571b1d, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.BaseAtoms.ItemValueList, com.thesolarmoose.name
+        m_MethodName: RemoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1fb5cf670e9fe7c4fa6cda64314558a0, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.BaseAtoms.ItemValueList, com.thesolarmoose.name
+        m_MethodName: RemoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: aec1b6f4e2a882c438e54ca1a4464dca, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &4185145916751109119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-clockguy
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 9fe77610caebaec4aab93debb02302be, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: dfb67ec53c3303644a7bc023cf7d8864, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.BaseAtoms.ItemValueList, com.thesolarmoose.name
+        m_MethodName: RemoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: faf5e358fbfdfe0459e7f3241cea866a, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &5772085710611456833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,3 +612,150 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &6379798340902402518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_damsel-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298396
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298396
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: d8f42f9e5fe29bd4680ced2c5dbb8bc8, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
+--- !u!114 &7434654520407988855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_clockguy-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298395
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298395
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 9fe77610caebaec4aab93debb02302be, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0
+--- !u!114 &7734665496560866632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-judge
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 123de4eecd173a2419070e5eabb2c5ab, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomVariable`5[[System.Boolean, mscorlib
+        m_MethodName: set_Value
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.AtomValueList`2[[Items.Item, com.thesolarmoose.name
+        m_MethodName: Add
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 271f36c078dd5024a9f59197361166c8, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.BaseAtoms.ItemValueList, com.thesolarmoose.name
+        m_MethodName: RemoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 68016a8ce7132f540bbd5edc9d203e82, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &7860390995035024994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ee068b4e1ee4b89a982be5a2aff1bf8, type: 3}
+  m_Name: check_jar-solved
+  m_EditorClassIdentifier: 
+  _displayName: 
+  _predicate:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506541278298398
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506541278298398
+      type: {class: SerializableCallbackCheck, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _callback:
+          _target: {fileID: 11400000, guid: 6994e06003af2e74089ffb5f6abfe1cf, type: 2}
+          _methodName: get_Value
+          _args: []
+          _dynamic: 0
+          _typeName: Dialogues.Data.SerializableCheck, com.thesolarmoose.name, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          dirty: 0

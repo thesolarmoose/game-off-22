@@ -8,5 +8,11 @@ namespace UnityAtoms.BaseAtoms
     /// </summary>
     [EditorIcon("atom-icon-piglet")]
     [CreateAssetMenu(menuName = "Unity Atoms/Value Lists/Item", fileName = "ItemValueList")]
-    public sealed class ItemValueList : AtomValueList<Items.Item, ItemEvent> { }
+    public sealed class ItemValueList : AtomValueList<Items.Item, ItemEvent>
+    {
+        public void RemoveItem(Item item)
+        {
+            Remove(item);
+        }
+    }
 }

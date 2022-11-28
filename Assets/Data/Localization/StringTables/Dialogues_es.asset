@@ -39,6 +39,102 @@ MonoBehaviour:
     m_Localized: Eso no tiene sentido.
     m_Metadata:
       m_Items: []
+  - m_Id: 4348401071153152
+    m_Localized: Estoy triste. Pero el tiempo lo cura todo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4348462987468800
+    m_Localized: "Gracias! Supongo que la comida tambi\xE9n lo cura todo."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4349044607410176
+    m_Localized: Gracias de nuevo.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357043719757824
+    m_Localized: <blacksmith-default>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357138414559232
+    m_Localized: blacksmith-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357180688949248
+    m_Localized: blacksmith-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357217166811136
+    m_Localized: damsel-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357303535919104
+    m_Localized: damsel-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357342027046912
+    m_Localized: damsel-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357372653854720
+    m_Localized: herbalist-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357473623334912
+    m_Localized: herbalist-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357501607731200
+    m_Localized: herbalist-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357531072716800
+    m_Localized: jar-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357566300676096
+    m_Localized: jar-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357599787999232
+    m_Localized: jar-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357642976747520
+    m_Localized: judge-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357674748600320
+    m_Localized: judge-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357697662083072
+    m_Localized: judge-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357881750085632
+    m_Localized: oldman-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357908690100224
+    m_Localized: oldman-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357942814957568
+    m_Localized: oldman-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4357978449764352
+    m_Localized: villain-default
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4358022678700032
+    m_Localized: villain-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4358049421582336
+    m_Localized: villain-solved
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
