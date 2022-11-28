@@ -135,6 +135,19 @@ MonoBehaviour:
     m_Localized: villain-solved
     m_Metadata:
       m_Items: []
+  - m_Id: 4408756606590976
+    m_Localized: Perdiste! JAAJAJAJAJAJ
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408993400217600
+    m_Localized: Ganaste! Toma estos diamantes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4409255695212544
+    m_Localized: "\rMaldita sea, es hora de romper otro jarr\xF3n e intentarlo de
+      nuevo."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

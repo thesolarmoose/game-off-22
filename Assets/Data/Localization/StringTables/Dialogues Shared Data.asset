@@ -131,6 +131,20 @@ MonoBehaviour:
     m_Key: villain-solved
     m_Metadata:
       m_Items: []
+  - m_Id: 4408756606590976
+    m_Key: villain_lost_game_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408993400217600
+    m_Key: villain_won_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4409255695212544
+    m_Key: 'villain_lost_game_2
+
+'
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

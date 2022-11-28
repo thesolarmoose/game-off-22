@@ -33,17 +33,26 @@ namespace Interactions
         public async Task ExecuteEvents(Item item, CancellationToken ct)
         {
             _onStartEvent.Invoke();
-            
-            foreach (var @event in _events)
+
+            var events = _events.ConvertAll(evt => evt.Value);
+            await ExecuteEvents(item, events, ct);
+
+            _onFinishEvent.Invoke();
+        }
+
+        public static async Task<bool> ExecuteEvents(Item item, List<IInteractionEvent> events, CancellationToken ct)
+        {
+            bool shouldContinue = true;
+            foreach (var @event in events)
             {
-                var shouldContinue = await @event.Value.ExecuteEvent(item, ct);
+                shouldContinue = await @event.ExecuteEvent(item, ct);
                 if (!shouldContinue)
                 {
                     break;
                 }
             }
-
-            _onFinishEvent.Invoke();
+            
+            return shouldContinue;
         }
     }
 }

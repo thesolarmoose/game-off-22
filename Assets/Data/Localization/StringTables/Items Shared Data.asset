@@ -47,6 +47,10 @@ MonoBehaviour:
     m_Key: knife
     m_Metadata:
       m_Items: []
+  - m_Id: 2244343511281664
+    m_Key: knife-sharp
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

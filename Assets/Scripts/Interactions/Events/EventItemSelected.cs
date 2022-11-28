@@ -20,21 +20,13 @@ namespace Interactions.Events
         
         public async Task<bool> ExecuteEvent(Item item, CancellationToken ct)
         {
-            var events = GetAppropriateEvent(item);
-            bool shouldContinue = true;
-            foreach (var @event in events)
-            {
-                shouldContinue = await @event.ExecuteEvent(item, ct);
-                if (!shouldContinue)
-                {
-                    break;
-                }
-            }
-
+            var events = GetValidEvents(item);
+            
+            bool shouldContinue = await InteractableEvent.ExecuteEvents(item, events, ct);
             return shouldContinue;
         }
 
-        private List<IInteractionEvent> GetAppropriateEvent(Item item)
+        private List<IInteractionEvent> GetValidEvents(Item item)
         {
             var serializableEvents = _noItemSelectedEvents;
             

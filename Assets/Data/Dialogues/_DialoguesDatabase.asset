@@ -172,7 +172,34 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
-  m_Name: trigger_solve-villain
+  m_Name: trigger_solve-villain-lose_coin
+  m_EditorClassIdentifier: 
+  _event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: d5e8591ab175585408ba5e7cfa15828a, type: 2}
+        m_TargetAssemblyTypeName: UnityAtoms.BaseAtoms.ItemValueList, com.thesolarmoose.name
+        m_MethodName: RemoveItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: d55b238109e7b384694b3ecba264e667, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Items.Item, com.thesolarmoose.name
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &-2415891239100627015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99960b37907441f96268c67e534fce8, type: 3}
+  m_Name: trigger_solve-villain-get_diamonds
   m_EditorClassIdentifier: 
   _event:
     m_PersistentCalls:
@@ -199,7 +226,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &-1329584146368973337
 MonoBehaviour:
@@ -266,6 +293,7 @@ MonoBehaviour:
   - {fileID: 7734665496560866632}
   - {fileID: -5709614153063430218}
   - {fileID: -4002771435026503836}
+  - {fileID: -2415891239100627015}
 --- !u!114 &513222974387435354
 MonoBehaviour:
   m_ObjectHideFlags: 0

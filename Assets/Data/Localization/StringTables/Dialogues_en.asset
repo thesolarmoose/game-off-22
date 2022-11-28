@@ -126,6 +126,26 @@ MonoBehaviour:
     m_Localized: villain-solved
     m_Metadata:
       m_Items: []
+  - m_Id: 4408756606590976
+    m_Localized: You lost! HAHAHHHAHAH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408993400217600
+    m_Localized: You won! Take this diamonds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4409255695212544
+    m_Localized: God damn, time to break another pot and try again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2176226411143168
+    m_Localized: Hello
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2174828818718720
+    m_Localized: 
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
