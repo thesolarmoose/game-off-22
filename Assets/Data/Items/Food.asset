@@ -22,6 +22,20 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _sprite: {fileID: 0}
+  _pickupSound:
+    Guid:
+      Data1: 873395762
+      Data2: 1181228293
+      Data3: 583903104
+      Data4: -1144094652
+    Path: event:/Conseguir  Comida
+  _useSound:
+    Guid:
+      Data1: 260881466
+      Data2: 1307840804
+      Data3: 1428137648
+      Data4: 630589930
+    Path: event:/Usar  Comida
   references:
     version: 2
     RefIds: []

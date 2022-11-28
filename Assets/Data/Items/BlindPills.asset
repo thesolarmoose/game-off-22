@@ -22,6 +22,20 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _sprite: {fileID: 0}
+  _pickupSound:
+    Guid:
+      Data1: -1433927099
+      Data2: 1106965094
+      Data3: 1851695752
+      Data4: 1349669332
+    Path: event:/Conseguir Pastillas
+  _useSound:
+    Guid:
+      Data1: 1182982232
+      Data2: 1124816478
+      Data3: 1935720858
+      Data4: 1373371573
+    Path: event:/Usar Pastillas
   references:
     version: 2
     RefIds: []

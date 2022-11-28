@@ -22,6 +22,20 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _sprite: {fileID: 0}
+  _pickupSound:
+    Guid:
+      Data1: 703025404
+      Data2: 1298138540
+      Data3: 407453582
+      Data4: 168665718
+    Path: event:/Conseguir Reloj
+  _useSound:
+    Guid:
+      Data1: 1821136659
+      Data2: 1341637287
+      Data3: 1889108875
+      Data4: -1784957293
+    Path: event:/Usar Reloj
   references:
     version: 2
     RefIds: []

@@ -37,6 +37,15 @@ namespace Interactions.Events
                 {
                     var @event = _itemSelectedEvents.First(itemEvent => itemEvent.EvaluateItem(item));
                     serializableEvents = @event.Events;
+
+                    var serializedEvent = new SerializableInterface<IInteractionEvent>()
+                    {
+                        Value = EventUnityEvent.Create(() =>
+                        {
+                            FMODUnity.RuntimeManager.CreateInstance(item.UseSound).start();
+                        })
+                    };
+                    serializableEvents.Insert(0, serializedEvent);
                 }
                 else
                 {

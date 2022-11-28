@@ -20,5 +20,15 @@ namespace Interactions.Events
 
             return true;
         }
+
+        public static EventUnityEvent Create(Action action)
+        {
+            var evt = new EventUnityEvent()
+            {
+                _event = new UnityEvent()
+            };
+            evt._event.AddListener(action.Invoke);
+            return evt;
+        }
     }
 }

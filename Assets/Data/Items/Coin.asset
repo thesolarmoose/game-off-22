@@ -22,6 +22,20 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _sprite: {fileID: 0}
+  _pickupSound:
+    Guid:
+      Data1: -1577182904
+      Data2: 1293556416
+      Data3: -150979660
+      Data4: -816332027
+    Path: event:/Conseguir Moneda
+  _useSound:
+    Guid:
+      Data1: -1242105668
+      Data2: 1294610671
+      Data3: 1654380972
+      Data4: 1991587693
+    Path: event:/Usar Moneda
   references:
     version: 2
     RefIds: []

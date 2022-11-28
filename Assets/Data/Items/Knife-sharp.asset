@@ -22,6 +22,20 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _sprite: {fileID: 0}
+  _pickupSound:
+    Guid:
+      Data1: -794568638
+      Data2: 1243533385
+      Data3: 1278907813
+      Data4: -407182240
+    Path: event:/Conseguir Cuchillon
+  _useSound:
+    Guid:
+      Data1: -930663864
+      Data2: 1340404588
+      Data3: -1983550299
+      Data4: 2068250904
+    Path: event:/Usar Cuchillon
   references:
     version: 2
     RefIds: []

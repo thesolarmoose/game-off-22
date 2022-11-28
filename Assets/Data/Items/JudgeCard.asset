@@ -22,6 +22,20 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _sprite: {fileID: 0}
+  _pickupSound:
+    Guid:
+      Data1: -231642532
+      Data2: 1168044820
+      Data3: -1272695413
+      Data4: 1216079378
+    Path: event:/Conseguir Tarjeta
+  _useSound:
+    Guid:
+      Data1: 494488235
+      Data2: 1115910192
+      Data3: -807866195
+      Data4: -838096644
+    Path: event:/Usar Tarjeta
   references:
     version: 2
     RefIds: []

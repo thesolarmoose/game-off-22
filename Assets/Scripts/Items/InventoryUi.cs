@@ -5,6 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using BrunoMikoski.AnimationSequencer;
 using DG.Tweening;
+using FMODUnity;
 using ModelView;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
@@ -61,6 +62,7 @@ namespace Items
             var view = _viewList.Add(item) as ItemView;
             view.OnSelectEvent.AddListener(() => OnItemSelected(item));
             view.OnDeselectEvent.AddListener(() => OnItemDeselected(item));
+            FMODUnity.RuntimeManager.CreateInstance(item.PickupSound).start();
 
             if (_isOpened)
             {

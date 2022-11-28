@@ -22,6 +22,20 @@ MonoBehaviour:
     m_WaitForCompletion: 0
     m_LocalVariables: []
   _sprite: {fileID: 0}
+  _pickupSound:
+    Guid:
+      Data1: -436187638
+      Data2: 1282050468
+      Data3: -1240185181
+      Data4: -1634793442
+    Path: event:/Conseguir Diamante
+  _useSound:
+    Guid:
+      Data1: 827003035
+      Data2: 1301584176
+      Data3: -1153734736
+      Data4: -592112628
+    Path: event:/Usar Diamante
   references:
     version: 2
     RefIds: []
