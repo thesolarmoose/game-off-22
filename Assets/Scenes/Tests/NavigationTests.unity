@@ -4436,7 +4436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 123750657}
-  m_PathPosition: 0.592851
+  m_PathPosition: 0.5534652
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: -1, z: -2}
   m_XDamping: 0.5
@@ -5406,7 +5406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 479013319}
-  m_PathPosition: 0.5759656
+  m_PathPosition: 0.3118928
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0.5
