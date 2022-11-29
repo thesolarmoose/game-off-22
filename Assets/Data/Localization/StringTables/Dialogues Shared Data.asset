@@ -15,24 +15,16 @@ MonoBehaviour:
   m_TableCollectionName: Dialogues
   m_TableCollectionNameGuidString: faba47bbb5cc16b40be65c705effbf54
   m_Entries:
-  - m_Id: 12065955840
-    m_Key: test_1
+  - m_Id: 4357043719757824
+    m_Key: blacksmith-default
     m_Metadata:
       m_Items: []
-  - m_Id: 99211010048
-    m_Key: test_2
+  - m_Id: 4357138414559232
+    m_Key: blacksmith-item
     m_Metadata:
       m_Items: []
-  - m_Id: 2174828818718720
-    m_Key: merchant_meet
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2176226411143168
-    m_Key: merchant_already_met
-    m_Metadata:
-      m_Items: []
-  - m_Id: 2574584091930624
-    m_Key: defaul-wrong-item
+  - m_Id: 4357180688949248
+    m_Key: blacksmith-solved
     m_Metadata:
       m_Items: []
   - m_Id: 4348401071153152
@@ -47,18 +39,6 @@ MonoBehaviour:
     m_Key: clockguy-solved
     m_Metadata:
       m_Items: []
-  - m_Id: 4357043719757824
-    m_Key: blacksmith-default
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4357138414559232
-    m_Key: blacksmith-item
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4357180688949248
-    m_Key: blacksmith-solved
-    m_Metadata:
-      m_Items: []
   - m_Id: 4357217166811136
     m_Key: damsel-default
     m_Metadata:
@@ -71,12 +51,20 @@ MonoBehaviour:
     m_Key: damsel-solved
     m_Metadata:
       m_Items: []
+  - m_Id: 2574584091930624
+    m_Key: defaul-wrong-item
+    m_Metadata:
+      m_Items: []
   - m_Id: 4357372653854720
     m_Key: herbalist-default
     m_Metadata:
       m_Items: []
   - m_Id: 4357473623334912
     m_Key: herbalist-item
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4691740878430208
+    m_Key: herbalist-item-shitty_knife
     m_Metadata:
       m_Items: []
   - m_Id: 4357501607731200
@@ -107,6 +95,14 @@ MonoBehaviour:
     m_Key: judge-solved
     m_Metadata:
       m_Items: []
+  - m_Id: 2176226411143168
+    m_Key: merchant_already_met
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2174828818718720
+    m_Key: merchant_meet
+    m_Metadata:
+      m_Items: []
   - m_Id: 4357881750085632
     m_Key: oldman-default
     m_Metadata:
@@ -117,6 +113,28 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 4357942814957568
     m_Key: oldman-solved
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12065955840
+    m_Key: test_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 99211010048
+    m_Key: test_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408756606590976
+    m_Key: villain_lost_game_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4409255695212544
+    m_Key: 'villain_lost_game_2
+
+'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4408993400217600
+    m_Key: villain_won_game
     m_Metadata:
       m_Items: []
   - m_Id: 4357978449764352
@@ -131,18 +149,8 @@ MonoBehaviour:
     m_Key: villain-solved
     m_Metadata:
       m_Items: []
-  - m_Id: 4408756606590976
-    m_Key: villain_lost_game_1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4408993400217600
-    m_Key: villain_won_game
-    m_Metadata:
-      m_Items: []
-  - m_Id: 4409255695212544
-    m_Key: 'villain_lost_game_2
-
-'
+  - m_Id: 4696798516994048
+    m_Key: villain-default-2
     m_Metadata:
       m_Items: []
   m_Metadata:

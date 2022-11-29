@@ -27,28 +27,27 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2174828818718720
-    m_Localized: "Hola aventurero! Aqu\xED tienes un martillo y un cuchillo para
-      comenzar tu aventura."
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 2176226411143168
-    m_Localized: Hola!
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 2574584091930624
-    m_Localized: Eso no tiene sentido.
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4348401071153152
-    m_Localized: Estoy triste. Pero el tiempo lo cura todo.
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4348462987468800
-    m_Localized: "Gracias! Supongo que la comida tambi\xE9n lo cura todo."
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4349044607410176
-    m_Localized: Gracias de nuevo.
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357043719757824
@@ -120,7 +119,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357942814957568
-    m_Localized: oldman-solved
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357978449764352

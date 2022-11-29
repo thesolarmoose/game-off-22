@@ -31,51 +31,62 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4348401071153152
-    m_Localized: I'm sad. But time heals everything.
+    m_Localized: "Oh! This wound\u2019s so terrible. Thank God I have this clock.
+      Time heals everything. I just have to wait."
     m_Metadata:
       m_Items: []
   - m_Id: 4348462987468800
-    m_Localized: Oh thanks, i guess food also heals everything.
+    m_Localized: "I\u2019m healed! Thank you! Thank you! Take the clock with you,
+      it\u2019s a present for saving me. Maybe you could use time for your benefice,
+      I mean, time flies, only time will tell.  I think time is a useful resource."
     m_Metadata:
       m_Items: []
   - m_Id: 4349044607410176
-    m_Localized: Thanks again.
+    m_Localized: Did you use the time already?
     m_Metadata:
       m_Items: []
   - m_Id: 4357043719757824
-    m_Localized: <blacksmith-default>
+    m_Localized: I want to create the strongest sword ever. But I need diamonds.
+      A diamond sword would be the most strongest in History.
     m_Metadata:
       m_Items: []
   - m_Id: 4357138414559232
-    m_Localized: blacksmith-item
+    m_Localized: "Are those diamonds? For me? How could I pay you, my friend? Give
+      me that old knife. I\u2019ll return it to you as new."
     m_Metadata:
       m_Items: []
   - m_Id: 4357180688949248
-    m_Localized: blacksmith-solved
+    m_Localized: "I\u2019m already working on the sword."
     m_Metadata:
       m_Items: []
   - m_Id: 4357217166811136
-    m_Localized: damsel-default
+    m_Localized: "I don\u2019t know how I get married to my husband, the herbalist.
+      I have to get a divorce. I need a judge. Please help me. I will give you this
+      Large Medipack if you help me."
     m_Metadata:
       m_Items: []
   - m_Id: 4357303535919104
-    m_Localized: damsel-item
+    m_Localized: "There\u2019s a Judge in town? Really? Good, I\u2019ll get the divorce
+      before my husband returns from work."
     m_Metadata:
       m_Items: []
   - m_Id: 4357342027046912
-    m_Localized: damsel-solved
+    m_Localized: I am a free woman. What a surprise for the herbalist when he gets
+      home.
     m_Metadata:
       m_Items: []
   - m_Id: 4357372653854720
-    m_Localized: herbalist-default
+    m_Localized: "I lost my knife. Now I can\u2019t prepare the ingredients to make
+      a love potion for my wife. Please help me! I will give you whatever you want."
     m_Metadata:
       m_Items: []
   - m_Id: 4357473623334912
-    m_Localized: herbalist-item
+    m_Localized: Oh! This is it! A good knife! How may I help you? Pills to get blind?
+      Right here. The effect longs 8 hours.
     m_Metadata:
       m_Items: []
   - m_Id: 4357501607731200
-    m_Localized: herbalist-solved
+    m_Localized: Thank you for the knife. Now my wife will love me again.
     m_Metadata:
       m_Items: []
   - m_Id: 4357531072716800
@@ -91,39 +102,46 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357642976747520
-    m_Localized: judge-default
+    m_Localized: "I want to be a good judge, but I can\u2019t because justice must
+      be blind, and I\u2019m not. I wish I could be blind, at least for a few hours
+      a day."
     m_Metadata:
       m_Items: []
   - m_Id: 4357674748600320
-    m_Localized: judge-item
+    m_Localized: "Oh! I can\u2019t see! It\u2019s a miracle! A miracle! Now I can
+      be a good judge. Here, take my business card. Maybe someone needs a judge around."
     m_Metadata:
       m_Items: []
   - m_Id: 4357697662083072
-    m_Localized: judge-solved
+    m_Localized: "I\u2019m very happy about my blindness. Thank you so much."
     m_Metadata:
       m_Items: []
   - m_Id: 4357881750085632
-    m_Localized: oldman-default
+    m_Localized: Over this hole, in the sky, there is another hole, one to leave
+      this village. You need a flying object. We. I also want to leave this place.
     m_Metadata:
       m_Items: []
   - m_Id: 4357908690100224
-    m_Localized: oldman-item
+    m_Localized: "A clock? Do you want to fly in a clock? Of course! Time flies.
+      You are a genius! Let\u2019s get the hell out of here!"
     m_Metadata:
       m_Items: []
   - m_Id: 4357942814957568
-    m_Localized: oldman-solved
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357978449764352
-    m_Localized: villain-default
+    m_Localized: Hey! Do you want some diamonds? You have to give me a coin, and
+      we will play head or tails. If you win, you get the diamonds.
     m_Metadata:
       m_Items: []
   - m_Id: 4358022678700032
-    m_Localized: villain-item
+    m_Localized: "Great! Let\u2019s play!"
     m_Metadata:
       m_Items: []
   - m_Id: 4358049421582336
-    m_Localized: villain-solved
+    m_Localized: "I don\u2019t know why I bet a bunch of diamonds on a coin. I must
+      be stupid, like some kind of videogame villain."
     m_Metadata:
       m_Items: []
   - m_Id: 4408756606590976
@@ -139,11 +157,23 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2176226411143168
-    m_Localized: Hello
+    m_Localized: "Have you already used the knife and the hammer? Trust me. You will
+      need it. Otherwise, I won\u2019t be here at the beginning of the map."
     m_Metadata:
       m_Items: []
   - m_Id: 2174828818718720
-    m_Localized: 
+    m_Localized: You are a hero! A true Hero! But a hero should have a weapon and
+      a tool. Here, take this knife and this hammer. You will need it. All heroes
+      always use whatever they get at the start of a new adventure.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4691740878430208
+    m_Localized: That is a shitty knife, my friend. I need a good knife.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4696798516994048
+    m_Localized: "And if you lose, I keep it. This is a clich\xE9 world. Look for
+      a coin somewhere. I\u2019m sure there\u2019s something with a coin inside."
     m_Metadata:
       m_Items: []
   references:

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-2771848938333357154
+--- !u!114 &-7306954272767898893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26,13 +26,13 @@ MonoBehaviour:
     mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: 398506541278298383
+      rid: 398506563140321287
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 398506541278298383
+    - rid: 398506563140321287
       type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
       data:
         _triggers: []
@@ -45,6 +45,69 @@ MonoBehaviour:
             m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
           m_TableEntryReference:
             m_KeyId: 4358049421582336
+            m_Key: 
+          m_FallbackState: 0
+          m_WaitForCompletion: 0
+          m_LocalVariables: []
+--- !u!114 &-2160593240275715757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
+  m_Name: Interact-Villain-default_line-1
+  m_EditorClassIdentifier: 
+  _lineData:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 805541210524483607
+  _check:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506563140321288
+  _trigger:
+    mode: 1
+    unityReference: {fileID: 0}
+    rawReference:
+      rid: 398506563140321289
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 398506563140321288
+      type: {class: BinaryCheck, ns: Dialogues.Core.Checks, asm: com.facticus.dialogues}
+      data:
+        _operation: 3
+        _checkA:
+          mode: 0
+          unityReference: {fileID: 1618042034171534218, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+          rawReference:
+            rid: -2
+        _checkB:
+          mode: 0
+          unityReference: {fileID: 1618042034171534218, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+          rawReference:
+            rid: -2
+    - rid: 398506563140321289
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers: []
+    - rid: 805541210524483607
+      type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
+      data:
+        _character: {fileID: 11400000, guid: a5620a7c21d13ba428e04b55c389de6d, type: 2}
+        _dialogueText:
+          m_TableReference:
+            m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
+          m_TableEntryReference:
+            m_KeyId: 4357978449764352
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
@@ -62,46 +125,56 @@ MonoBehaviour:
   m_Name: Interact-Villain-default
   m_EditorClassIdentifier: 
   _startLines:
-  - {fileID: 5964506864957425820}
-  - {fileID: -2771848938333357154}
+  - {fileID: -2160593240275715757}
+  - {fileID: -7306954272767898893}
   _lines:
-  - {fileID: 5964506864957425820}
-  - {fileID: -2771848938333357154}
+  - {fileID: -2160593240275715757}
+  - {fileID: -7306954272767898893}
+  - {fileID: 8949688333930738715}
   _linesConnections:
-    m_keys: []
-    m_values: []
+    m_keys:
+    - {fileID: -2160593240275715757}
+    m_values:
+    - data:
+      - {fileID: 8949688333930738715}
   _editorData:
     _nodes:
     - node:
         mode: 1
         unityReference: {fileID: 0}
         rawReference:
-          rid: 398506541278298384
-      position: {x: 314.4, y: -233.6}
+          rid: 398506563140321290
+      position: {x: 314.40002, y: -233.6}
     - node:
         mode: 1
         unityReference: {fileID: 0}
         rawReference:
-          rid: 398506541278298385
+          rid: 398506563140321291
       position: {x: 80, y: -165.6}
     - node:
         mode: 1
         unityReference: {fileID: 0}
         rawReference:
-          rid: 398506541278298386
-      position: {x: 314.4, y: 135.2}
+          rid: 398506563140321292
+      position: {x: 314.40002, y: 135.2}
     - node:
         mode: 1
         unityReference: {fileID: 0}
         rawReference:
-          rid: 398506541278298387
+          rid: 398506563140321293
       position: {x: -110.4, y: -165.6}
     - node:
         mode: 1
         unityReference: {fileID: 0}
         rawReference:
-          rid: 398506541278298388
-      position: {x: 68.8, y: 199.2}
+          rid: 398506563140321294
+      position: {x: 68.799995, y: 199.2}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506563140321295
+      position: {x: 727.2, y: -233.6}
     _edges:
     - inputNodeIndex: 0
       inputPortIndex: 0
@@ -127,32 +200,40 @@ MonoBehaviour:
       inputPortIndex: 2
       outputNodeIndex: 4
       outputPortIndex: 0
+    - inputNodeIndex: 5
+      inputPortIndex: 0
+      outputNodeIndex: 0
+      outputPortIndex: 1
   references:
     version: 2
     RefIds:
-    - rid: 398506541278298384
+    - rid: 398506563140321290
       type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
       data:
-        _dialogueLine: {fileID: 5964506864957425820}
-    - rid: 398506541278298385
+        _dialogueLine: {fileID: -2160593240275715757}
+    - rid: 398506563140321291
       type: {class: BooleanNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
       data:
         _booleanOperation: 3
-    - rid: 398506541278298386
+    - rid: 398506563140321292
       type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
       data:
-        _dialogueLine: {fileID: -2771848938333357154}
-    - rid: 398506541278298387
+        _dialogueLine: {fileID: -7306954272767898893}
+    - rid: 398506563140321293
       type: {class: CheckNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
       data:
         _property: {fileID: 1618042034171534218, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
         _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
-    - rid: 398506541278298388
+    - rid: 398506563140321294
       type: {class: CheckNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
       data:
         _property: {fileID: 1618042034171534218, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
         _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
---- !u!114 &5964506864957425820
+    - rid: 398506563140321295
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 8949688333930738715}
+--- !u!114 &8949688333930738715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,47 +243,29 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
-  m_Name: Interact-Villain-default_line-1
+  m_Name: Interact-Villain-default_line-3
   m_EditorClassIdentifier: 
   _lineData:
     mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: 805541210524483607
+      rid: 398506563140321286
   _check:
     mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: 398506541278298389
+      rid: -2
   _trigger:
     mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: 398506541278298390
+      rid: 398506563140321296
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 398506541278298389
-      type: {class: BinaryCheck, ns: Dialogues.Core.Checks, asm: com.facticus.dialogues}
-      data:
-        _operation: 3
-        _checkA:
-          mode: 0
-          unityReference: {fileID: 1618042034171534218, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
-          rawReference:
-            rid: -2
-        _checkB:
-          mode: 0
-          unityReference: {fileID: 1618042034171534218, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
-          rawReference:
-            rid: -2
-    - rid: 398506541278298390
-      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
-      data:
-        _triggers: []
-    - rid: 805541210524483607
+    - rid: 398506563140321286
       type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
       data:
         _character: {fileID: 11400000, guid: a5620a7c21d13ba428e04b55c389de6d, type: 2}
@@ -210,8 +273,12 @@ MonoBehaviour:
           m_TableReference:
             m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
           m_TableEntryReference:
-            m_KeyId: 4357978449764352
+            m_KeyId: 4696798516994048
             m_Key: 
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
+    - rid: 398506563140321296
+      type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
+      data:
+        _triggers: []

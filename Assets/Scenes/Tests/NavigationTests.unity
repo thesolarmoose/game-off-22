@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 9234933}
   - component: {fileID: 9234934}
   m_Layer: 0
-  m_Name: medic
+  m_Name: herbalist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1303,6 +1303,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &437224301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 437224302}
+  - component: {fileID: 437224303}
+  m_Layer: 7
+  m_Name: EventWrongItemKnifeSelectedDialogue (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &437224302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437224301}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2124255601}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &437224303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437224301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f606a0c8bec14c7db6d395e6aba8af9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clickMovementController: {fileID: 1438063916}
+  _dialogue: {fileID: 11400000, guid: df3ee26008469dd4dad8548e015e3c96, type: 2}
+  _dialoguePopupPrefab: {fileID: 4055957975859761653, guid: a43f12cf6ab39c646ae1dfa4b0b00c8b, type: 3}
 --- !u!1 &440214180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,7 +1715,7 @@ MonoBehaviour:
   - position: {x: 0, y: 0, z: -5}
     tangent: {x: 1, y: 0, z: 0}
     roll: 90
-  - position: {x: 17, y: 0, z: -5}
+  - position: {x: 25, y: 0, z: -5}
     tangent: {x: -1, y: 0, z: 0}
     roll: 90
 --- !u!1 &504654024
@@ -4348,7 +4395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 123750657}
-  m_PathPosition: 0.563508
+  m_PathPosition: 0.3593807
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: -1, z: -2}
   m_XDamping: 0
@@ -6462,7 +6509,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7772477, y: 1}
+    m_SensorSize: {x: 1.3802855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6917,7 +6964,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7772477, y: 1}
+    m_SensorSize: {x: 1.3802855, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7539,9 +7586,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 617502161}
     - target: {fileID: 2401339627332618003, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
+      propertyPath: managedReferences[805541234036441107]._itemSelectedEvents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401339627332618003, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
       propertyPath: managedReferences[805541234036441107]._itemSelectedEvents.Array.data[0]._item
       value: 
       objectReference: {fileID: 11400000, guid: 20b631fab10e3c44db0e4e50d9571b1d, type: 2}
+    - target: {fileID: 2401339627332618003, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
+      propertyPath: managedReferences[805541234036441107]._itemSelectedEvents.Array.data[1]._item
+      value: 
+      objectReference: {fileID: 11400000, guid: 1fb5cf670e9fe7c4fa6cda64314558a0, type: 2}
+    - target: {fileID: 2401339627332618003, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
+      propertyPath: managedReferences[805541234036441107]._itemSelectedEvents.Array.data[1]._events.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401339627332618003, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
+      propertyPath: managedReferences[805541234036441107]._itemSelectedEvents.Array.data[1]._events.Array.data[0].rawReference
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401339627332618003, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
+      propertyPath: managedReferences[805541234036441107]._itemSelectedEvents.Array.data[1]._events.Array.data[0].unityReference
+      value: 
+      objectReference: {fileID: 437224303}
     - target: {fileID: 2401339627332618012, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
       propertyPath: m_Size.x
       value: 0.64
@@ -7587,6 +7654,11 @@ PrefabInstance:
 --- !u!4 &2124255600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2401339627332618002, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
+  m_PrefabInstance: {fileID: 2124255599}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2124255601 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9122396673837992592, guid: f22e1731f1e55cb47b78103cd6a19a88, type: 3}
   m_PrefabInstance: {fileID: 2124255599}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2132596643
