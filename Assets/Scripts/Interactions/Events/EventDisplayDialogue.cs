@@ -23,12 +23,12 @@ namespace Interactions.Events
         public async Task<bool> ExecuteEvent(Item item, CancellationToken ct)
         {
             _clickMovementController.enabled = false;
-            _inventoryUi.SetActive(false);
+            // _inventoryUi.SetActive(false);
 
             await Popups.ShowPopup(_dialoguePopupPrefab, _dialogue, ct);
             
             _clickMovementController.enabled = true;
-            _inventoryUi.SetActive(true);
+            // _inventoryUi.SetActive(true);
             
             return true;
         }
