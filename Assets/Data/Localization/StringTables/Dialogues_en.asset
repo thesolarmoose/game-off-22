@@ -62,7 +62,7 @@ MonoBehaviour:
   - m_Id: 4357217166811136
     m_Localized: "I don\u2019t know how I get married to my husband, the herbalist.
       I have to get a divorce. I need a judge. Please help me. I will give you this
-      Large Medipack if you help me."
+      Healing Food if you help me."
     m_Metadata:
       m_Items: []
   - m_Id: 4357303535919104
@@ -90,7 +90,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357531072716800
-    m_Localized: I think that's a clay pot.
+    m_Localized: A clay pot. Maybe there's something inside.
     m_Metadata:
       m_Items: []
   - m_Id: 4357566300676096
@@ -153,7 +153,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4409255695212544
-    m_Localized: God damn, time to break another pot and try again
+    m_Localized: Damn, time to break another pot and try again
     m_Metadata:
       m_Items: []
   - m_Id: 2176226411143168
