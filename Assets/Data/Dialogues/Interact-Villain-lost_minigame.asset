@@ -1,6 +1,63 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-3080105076585029330
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211fcffc7051485f90a5009a9efedc4d, type: 3}
+  m_Name: Interact-Villain-lost_minigame
+  m_EditorClassIdentifier: 
+  _startLines:
+  - {fileID: 9025881502511218494}
+  _lines:
+  - {fileID: 9025881502511218494}
+  - {fileID: 5578615475107039253}
+  _linesConnections:
+    m_keys:
+    - {fileID: 5578615475107039253}
+    m_values:
+    - data:
+      - {fileID: 9025881502511218494}
+  _editorData:
+    _nodes:
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506563140321311
+      position: {x: 164, y: -248.8}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506563140321312
+      position: {x: 535.2, y: -24.8}
+    _edges:
+    - inputNodeIndex: 1
+      inputPortIndex: 0
+      outputNodeIndex: -1
+      outputPortIndex: -1
+    - inputNodeIndex: 1
+      inputPortIndex: 0
+      outputNodeIndex: 0
+      outputPortIndex: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506563140321311
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 5578615475107039253}
+    - rid: 398506563140321312
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: 9025881502511218494}
+--- !u!114 &5578615475107039253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,7 +67,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
-  m_Name: Interact-Villain-lost_minigame_line-1
+  m_Name: Interact-Villain-lost_minigame_line-2
   m_EditorClassIdentifier: 
   _lineData:
     mode: 1
@@ -26,13 +83,13 @@ MonoBehaviour:
     mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: 398506541278298449
+      rid: 398506563140321315
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 398506541278298449
+    - rid: 398506563140321315
       type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
       data:
         _triggers: []
@@ -49,64 +106,7 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211fcffc7051485f90a5009a9efedc4d, type: 3}
-  m_Name: Interact-Villain-lost_minigame
-  m_EditorClassIdentifier: 
-  _startLines:
-  - {fileID: -3080105076585029330}
-  _lines:
-  - {fileID: -3080105076585029330}
-  - {fileID: 8394150372534634542}
-  _linesConnections:
-    m_keys:
-    - {fileID: -3080105076585029330}
-    m_values:
-    - data:
-      - {fileID: 8394150372534634542}
-  _editorData:
-    _nodes:
-    - node:
-        mode: 1
-        unityReference: {fileID: 0}
-        rawReference:
-          rid: 398506541278298446
-      position: {x: 209.59999, y: -86.4}
-    - node:
-        mode: 1
-        unityReference: {fileID: 0}
-        rawReference:
-          rid: 398506541278298450
-      position: {x: 612, y: -86.4}
-    _edges:
-    - inputNodeIndex: 0
-      inputPortIndex: 0
-      outputNodeIndex: -1
-      outputPortIndex: -1
-    - inputNodeIndex: 1
-      inputPortIndex: 0
-      outputNodeIndex: 0
-      outputPortIndex: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 398506541278298446
-      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
-      data:
-        _dialogueLine: {fileID: -3080105076585029330}
-    - rid: 398506541278298450
-      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
-      data:
-        _dialogueLine: {fileID: 8394150372534634542}
---- !u!114 &8394150372534634542
+--- !u!114 &9025881502511218494
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6540d68b4dbd4f95972ac4f9dde364db, type: 3}
-  m_Name: Interact-Villain-lost_minigame_line-2
+  m_Name: Interact-Villain-lost_minigame_line-1
   m_EditorClassIdentifier: 
   _lineData:
     mode: 1
@@ -132,7 +132,7 @@ MonoBehaviour:
     mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: 398506541278298451
+      rid: 398506563140321316
   references:
     version: 2
     RefIds:
@@ -151,7 +151,7 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
-    - rid: 398506541278298451
+    - rid: 398506563140321316
       type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
       data:
         _triggers: []

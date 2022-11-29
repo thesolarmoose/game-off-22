@@ -90,15 +90,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357531072716800
-    m_Localized: jar-default
+    m_Localized: I think that's a clay pot.
     m_Metadata:
       m_Items: []
   - m_Id: 4357566300676096
-    m_Localized: jar-item
+    m_Localized: Wow! A coin! This is so unexpected.
     m_Metadata:
       m_Items: []
   - m_Id: 4357599787999232
-    m_Localized: jar-solved
+    m_Localized: ???
     m_Metadata:
       m_Items: []
   - m_Id: 4357642976747520
@@ -149,7 +149,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4408993400217600
-    m_Localized: You won! Take this diamonds
+    m_Localized: yes, diamonds!
     m_Metadata:
       m_Items: []
   - m_Id: 4409255695212544

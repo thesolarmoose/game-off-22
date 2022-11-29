@@ -1,60 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 211fcffc7051485f90a5009a9efedc4d, type: 3}
-  m_Name: Interact-Villain-won_minigame
-  m_EditorClassIdentifier: 
-  _startLines:
-  - {fileID: 3014173656843581301}
-  _lines:
-  - {fileID: 3014173656843581301}
-  _linesConnections:
-    m_keys: []
-    m_values: []
-  _editorData:
-    _nodes:
-    - node:
-        mode: 1
-        unityReference: {fileID: 0}
-        rawReference:
-          rid: 398506541278298452
-      position: {x: 224.8, y: -108.8}
-    - node:
-        mode: 1
-        unityReference: {fileID: 0}
-        rawReference:
-          rid: 398506541278298453
-      position: {x: 599.2, y: -44}
-    _edges:
-    - inputNodeIndex: 0
-      inputPortIndex: 0
-      outputNodeIndex: -1
-      outputPortIndex: -1
-    - inputNodeIndex: 1
-      inputPortIndex: 0
-      outputNodeIndex: 0
-      outputPortIndex: 3
-  references:
-    version: 2
-    RefIds:
-    - rid: 398506541278298452
-      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
-      data:
-        _dialogueLine: {fileID: 3014173656843581301}
-    - rid: 398506541278298453
-      type: {class: TriggerNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
-      data:
-        _property: {fileID: -2415891239100627015, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
-        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
---- !u!114 &3014173656843581301
+--- !u!114 &-7935938321511581495
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -80,13 +26,13 @@ MonoBehaviour:
     mode: 1
     unityReference: {fileID: 0}
     rawReference:
-      rid: 398506541278298454
+      rid: 398506563140321317
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 398506541278298454
+    - rid: 398506563140321317
       type: {class: TriggerList, ns: Dialogues.Core.Triggers, asm: com.facticus.dialogues}
       data:
         _triggers:
@@ -94,7 +40,7 @@ MonoBehaviour:
     - rid: 805541210524483611
       type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
       data:
-        _character: {fileID: 11400000, guid: a5620a7c21d13ba428e04b55c389de6d, type: 2}
+        _character: {fileID: 11400000, guid: 61b1a8bda66441f44af15d173a100523, type: 2}
         _dialogueText:
           m_TableReference:
             m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
@@ -104,3 +50,57 @@ MonoBehaviour:
           m_FallbackState: 0
           m_WaitForCompletion: 0
           m_LocalVariables: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 211fcffc7051485f90a5009a9efedc4d, type: 3}
+  m_Name: Interact-Villain-won_minigame
+  m_EditorClassIdentifier: 
+  _startLines:
+  - {fileID: -7935938321511581495}
+  _lines:
+  - {fileID: -7935938321511581495}
+  _linesConnections:
+    m_keys: []
+    m_values: []
+  _editorData:
+    _nodes:
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506563140321318
+      position: {x: 224.8, y: -108.8}
+    - node:
+        mode: 1
+        unityReference: {fileID: 0}
+        rawReference:
+          rid: 398506563140321319
+      position: {x: 599.2, y: -44}
+    _edges:
+    - inputNodeIndex: 0
+      inputPortIndex: 0
+      outputNodeIndex: -1
+      outputPortIndex: -1
+    - inputNodeIndex: 1
+      inputPortIndex: 0
+      outputNodeIndex: 0
+      outputPortIndex: 3
+  references:
+    version: 2
+    RefIds:
+    - rid: 398506563140321318
+      type: {class: DialogueNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _dialogueLine: {fileID: -7935938321511581495}
+    - rid: 398506563140321319
+      type: {class: TriggerNode, ns: Dialogues.Editor.DialogueGraph.Nodes, asm: com.facticus.dialogues.Editor}
+      data:
+        _property: {fileID: -2415891239100627015, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
+        _database: {fileID: 11400000, guid: fdad4a15238949c4fadb53bcbe893191, type: 2}
