@@ -19,11 +19,11 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 12065955840
-    m_Localized: "Este es un di\xE1logo de ejemplo"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 99211010048
-    m_Localized: bla bla bla bla bla bla bla bla bla in spanish
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 2174828818718720
@@ -51,71 +51,71 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357043719757824
-    m_Localized: <blacksmith-default>
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357138414559232
-    m_Localized: blacksmith-item
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357180688949248
-    m_Localized: blacksmith-solved
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357217166811136
-    m_Localized: damsel-default
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357303535919104
-    m_Localized: damsel-item
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357342027046912
-    m_Localized: damsel-solved
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357372653854720
-    m_Localized: herbalist-default
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357473623334912
-    m_Localized: herbalist-item
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357501607731200
-    m_Localized: herbalist-solved
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357531072716800
-    m_Localized: jar-default
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357566300676096
-    m_Localized: jar-item
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357599787999232
-    m_Localized: ???
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357642976747520
-    m_Localized: judge-default
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357674748600320
-    m_Localized: judge-item
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357697662083072
-    m_Localized: judge-solved
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357881750085632
-    m_Localized: oldman-default
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357908690100224
-    m_Localized: oldman-item
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4357942814957568
@@ -123,19 +123,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357978449764352
-    m_Localized: villain-default
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4358022678700032
-    m_Localized: villain-item
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4358049421582336
-    m_Localized: villain-solved
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4408756606590976
-    m_Localized: Perdiste! JAAJAJAJAJAJ
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4408993400217600
@@ -143,8 +143,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4409255695212544
-    m_Localized: "\rMaldita sea, es hora de romper otro jarr\xF3n e intentarlo de
-      nuevo."
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:
