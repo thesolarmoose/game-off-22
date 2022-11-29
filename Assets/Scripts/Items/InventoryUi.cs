@@ -155,6 +155,7 @@ namespace Items
         public async Task OpenInventory(CancellationToken ct)
         {
             _currentItemSelected = null;
+            _thereIsSelected = false;
             _isOpened = true;
             await ExecuteOpenAnimationAsync();
             
