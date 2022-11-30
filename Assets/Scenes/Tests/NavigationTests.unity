@@ -6070,7 +6070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 123750657}
-  m_PathPosition: 0.6050847
+  m_PathPosition: 0.6277507
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: -1, z: -2}
   m_XDamping: 0.5
@@ -6194,7 +6194,7 @@ Transform:
   - {fileID: 1480363923}
   - {fileID: 2051337372}
   m_Father: {fileID: 2121311439}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1009359818
 MonoBehaviour:
@@ -7133,7 +7133,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773893, y: 1}
+    m_SensorSize: {x: 1.744887, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7561,7 +7561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Path: {fileID: 479013319}
-  m_PathPosition: 0
+  m_PathPosition: 0.4044347
   m_PositionUnits: 0
   m_PathOffset: {x: 0, y: 0, z: 0}
   m_XDamping: 0.5
@@ -10719,7 +10719,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7773893, y: 1}
+    m_SensorSize: {x: 1.744887, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
