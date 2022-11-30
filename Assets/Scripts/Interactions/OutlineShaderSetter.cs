@@ -1,21 +1,28 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace Interactions
 {
     public class OutlineShaderSetter : MonoBehaviour
     {
-        [SerializeField] private SpriteRenderer _renderer;
+        [SerializeField] private List<SpriteRenderer> _renderers;
         [SerializeField] private Material _default;
         [SerializeField] private Material _outline;
 
         public void SetShader()
         {
-            _renderer.material = _outline;
+            foreach (var spriteRenderer in _renderers)
+            {
+                spriteRenderer.material = _outline;
+            }
         }
 
         public void RemoveShader()
         {
-            _renderer.material = _default;
+            foreach (var spriteRenderer in _renderers)
+            {
+                spriteRenderer.material = _default;
+            }
         }
     }
 }

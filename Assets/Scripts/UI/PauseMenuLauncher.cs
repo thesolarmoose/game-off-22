@@ -56,6 +56,11 @@ namespace UI
 
         private void Cancel()
         {
+            if (_cts == null)
+            {
+                return;
+            }
+            
             if (!_cts.IsCancellationRequested)
             {
                 _cts.Cancel();
