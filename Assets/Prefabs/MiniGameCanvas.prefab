@@ -128,10 +128,10 @@ RectTransform:
   m_Father: {fileID: 8104671121590696423}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -115}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 0, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6663139236284884846
 CanvasRenderer:
@@ -997,7 +997,6 @@ GameObject:
   - component: {fileID: 7537497780331476738}
   - component: {fileID: 7537497780331476796}
   - component: {fileID: 7537497780331476797}
-  - component: {fileID: 7537497780331476799}
   m_Layer: 5
   m_Name: Choose text
   m_TagString: Untagged
@@ -1047,7 +1046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1122,42 +1121,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7537497780331476799
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537497780331476739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 398506541278298410
-  references:
-    version: 2
-    RefIds:
-    - rid: 398506541278298410
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 7537497780331476797}
-        m_TrackedProperties:
-          items:
-          - rid: 398506541278298411
-        m_UpdateType: 0
-    - rid: 398506541278298411
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Choose
-        - localeIdentifier:
-            m_Code: es
-          value: Escoge
 --- !u!1 &7537497780498683122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1346,6 @@ GameObject:
   - component: {fileID: 7537497780711043265}
   - component: {fileID: 7537497780711043267}
   - component: {fileID: 7537497780711043264}
-  - component: {fileID: 6129253613721941528}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1508,42 +1470,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6129253613721941528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537497780711043270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 398506541278298414
-  references:
-    version: 2
-    RefIds:
-    - rid: 398506541278298414
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 7537497780711043264}
-        m_TrackedProperties:
-          items:
-          - rid: 398506541278298415
-        m_UpdateType: 0
-    - rid: 398506541278298415
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Tails
-        - localeIdentifier:
-            m_Code: es
-          value: Cruz
 --- !u!1 &7537497780971980188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1555,7 +1481,6 @@ GameObject:
   - component: {fileID: 7537497780971980191}
   - component: {fileID: 7537497780971980185}
   - component: {fileID: 7537497780971980190}
-  - component: {fileID: 2719560403968792909}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1680,42 +1605,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2719560403968792909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537497780971980188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 398506541278298412
-  references:
-    version: 2
-    RefIds:
-    - rid: 398506541278298412
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 7537497780971980190}
-        m_TrackedProperties:
-          items:
-          - rid: 398506541278298413
-        m_UpdateType: 0
-    - rid: 398506541278298413
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Heads
-        - localeIdentifier:
-            m_Code: es
-          value: Cara
 --- !u!1 &7537497781126791186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,7 +1618,6 @@ GameObject:
   - component: {fileID: 7537497781126791183}
   - component: {fileID: 7537497781126791180}
   - component: {fileID: 7537497781126791181}
-  - component: {fileID: 2098181863851311034}
   m_Layer: 5
   m_Name: MiniGameCanvas
   m_TagString: Untagged
@@ -1843,81 +1731,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2098181863851311034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7537497781126791186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 398506541278298418
-  references:
-    version: 2
-    RefIds:
-    - rid: 398506541278298418
-      type: {class: TrackedMonoBehaviourObject, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 1215769567987717299}
-        m_TrackedProperties:
-          items:
-          - rid: 398506541278298421
-          - rid: 398506541278298422
-          - rid: 398506541278298423
-          - rid: 398506541278298424
-        m_UpdateType: 0
-        m_Changed:
-          m_PersistentCalls:
-            m_Calls: []
-    - rid: 398506541278298421
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: _headsText
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Heads
-        - localeIdentifier:
-            m_Code: es
-          value: Cara
-    - rid: 398506541278298422
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: _tailsText
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Tails
-        - localeIdentifier:
-            m_Code: es
-          value: Cruz
-    - rid: 398506541278298423
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: _winText
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: You won! :)
-        - localeIdentifier:
-            m_Code: es
-          value: Ganaste! :)
-    - rid: 398506541278298424
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: _loseText
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: You lost! :(
-        - localeIdentifier:
-            m_Code: es
-          value: Perdiste! :(
 --- !u!1 &8043785353596962504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,7 +1742,6 @@ GameObject:
   - component: {fileID: 3131540843467440463}
   - component: {fileID: 6009081433826742872}
   - component: {fileID: 101505424194104510}
-  - component: {fileID: 598435701719346127}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -2054,39 +1866,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &598435701719346127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8043785353596962504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_TrackedObjects:
-  - rid: 398506541278298425
-  references:
-    version: 2
-    RefIds:
-    - rid: 398506541278298425
-      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
-      data:
-        m_Target: {fileID: 101505424194104510}
-        m_TrackedProperties:
-          items:
-          - rid: 398506541278298426
-        m_UpdateType: 0
-    - rid: 398506541278298426
-      type: {class: StringTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
-      data:
-        m_PropertyPath: m_text
-        m_VariantData:
-        - localeIdentifier:
-            m_Code: en
-          value: Accept
-        - localeIdentifier:
-            m_Code: es
-          value: Aceptar
