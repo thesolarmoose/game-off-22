@@ -13,11 +13,15 @@ namespace Movement
         private void Update()
         {
             var horizontalVelocity = _mover.desiredVelocity.x;
-            var sign = Mathf.Sign(horizontalVelocity);
             var invertFactor = _invert ? -1 : 1;
-            sign *= invertFactor;
-
-            _target.localScale = new Vector3(sign, 1, 1);
+            if (horizontalVelocity > 0)
+            {
+                _target.localScale = new Vector3(invertFactor, 1, 1);
+            }
+            else if (horizontalVelocity < 0)
+            {
+                _target.localScale = new Vector3(-invertFactor, 1, 1);
+            }
         }
     }
 }
