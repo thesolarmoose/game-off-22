@@ -156,8 +156,9 @@ MonoBehaviour:
     Data4: -542116812
   Banks:
   - {fileID: -832193719227211504}
+  - {fileID: -5577635886414727410}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -178,10 +179,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/BG Music.bank
   Name: BG Music
   StudioPath: bank:/BG Music
-  lastModified: 638054428529260991
+  lastModified: 638054473390692601
   FileSizes:
   - Name: Desktop
-    Value: 494
+    Value: 5593728
   Exists: 1
 --- !u!114 &-5544577061418155987
 MonoBehaviour:
@@ -198,7 +199,7 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Usar Items.bank
   Name: Usar Items
   StudioPath: bank:/Usar Items
-  lastModified: 638054428530402475
+  lastModified: 638054473391695839
   FileSizes:
   - Name: Desktop
     Value: 411552
@@ -286,6 +287,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3700
+--- !u!114 &-4057351210334565362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Open Inventory
+  m_EditorClassIdentifier: 
+  Path: event:/Open Inventory
+  Guid:
+    Data1: 950748752
+    Data2: 1245628433
+    Data3: -2121577802
+    Data4: 816411921
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 400
 --- !u!114 &-4045487750080118088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,10 +384,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638054428529482920
+  lastModified: 638054473390931171
   FileSizes:
   - Name: Desktop
-    Value: 1848
+    Value: 2200
   Exists: 1
 --- !u!114 &-1298957530147052180
 MonoBehaviour:
@@ -403,10 +431,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Bank A.bank
   Name: Bank A
   StudioPath: bank:/Bank A
-  lastModified: 638054428529240293
+  lastModified: 638054473390165847
   FileSizes:
   - Name: Desktop
-    Value: 5589856
+    Value: 5593728
   Exists: 1
 --- !u!114 &-603927991018004334
 MonoBehaviour:
@@ -506,12 +534,14 @@ MonoBehaviour:
   - {fileID: 4713204354330345328}
   - {fileID: 751237628216638071}
   - {fileID: -1298957530147052180}
+  - {fileID: -4057351210334565362}
+  - {fileID: 5331649388586202603}
   EditorParameters: []
   MasterBanks:
   - {fileID: 924374723686725769}
   StringsBanks:
   - {fileID: -2292381398163948335}
-  cacheTime: 638054428530402475
+  cacheTime: 638054473391695839
   cacheVersion: 131593
 --- !u!114 &751237628216638071
 MonoBehaviour:
@@ -555,10 +585,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638054428529452421
+  lastModified: 638054473390906767
   FileSizes:
   - Name: Desktop
-    Value: 7424
+    Value: 7872
   Exists: 1
 --- !u!114 &1635142571376186666
 MonoBehaviour:
@@ -575,10 +605,10 @@ MonoBehaviour:
   Path: FMOD_builds/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638054428530088027
+  lastModified: 638054473391411149
   FileSizes:
   - Name: Desktop
-    Value: 770560
+    Value: 829728
   Exists: 1
 --- !u!114 &2075162362382314011
 MonoBehaviour:
@@ -600,8 +630,9 @@ MonoBehaviour:
     Data4: 108603158
   Banks:
   - {fileID: -832193719227211504}
+  - {fileID: -5577635886414727410}
   IsStream: 1
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
@@ -689,6 +720,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &5331649388586202603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Close Inventory
+  m_EditorClassIdentifier: 
+  Path: event:/Close Inventory
+  Guid:
+    Data1: -1091596297
+    Data2: 1273172642
+    Data3: 1590408838
+    Data4: 984175442
+  Banks:
+  - {fileID: 1635142571376186666}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 345
 --- !u!114 &5441234177687832861
 MonoBehaviour:
   m_ObjectHideFlags: 0
