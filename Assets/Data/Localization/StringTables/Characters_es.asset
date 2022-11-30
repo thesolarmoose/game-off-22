@@ -19,39 +19,39 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 265162842112
-    m_Localized: Juez
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 335660703744
-    m_Localized: "Se\xF1or mayor"
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 449309564928
-    m_Localized: Herrero
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 486861168640
-    m_Localized: Herbolario
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 46933204992
-    m_Localized: Persona abrazando
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 12162424832
-    m_Localized: Mercader
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 564636147712
-    m_Localized: Damisela en apuros
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 861488013312
-    m_Localized: Villano
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 4778267500544
-    m_Localized: Aventurero
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:

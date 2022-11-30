@@ -19,39 +19,39 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 13840146432
-    m_Localized: Pastillas de ceguera
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 55338590208
-    m_Localized: Reloj
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 70077374464
-    m_Localized: Moneda
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 90843373568
-    m_Localized: Diamantes
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 126515929088
-    m_Localized: Comida
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 141741252608
-    m_Localized: Martillo
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 161072799744
-    m_Localized: Tarjeta del juez
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 186402201600
-    m_Localized: Cuchillo
+    m_Localized: 
     m_Metadata:
       m_Items: []
   - m_Id: 2244343511281664
-    m_Localized: Cuchillo afilado
+    m_Localized: 
     m_Metadata:
       m_Items: []
   references:

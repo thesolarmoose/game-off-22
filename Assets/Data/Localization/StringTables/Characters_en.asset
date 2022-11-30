@@ -23,7 +23,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 46933204992
-    m_Localized: Hugging guy
+    m_Localized: Injured guy
     m_Metadata:
       m_Items: []
   - m_Id: 265162842112
@@ -51,7 +51,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4778267500544
-    m_Localized: Adventurer
+    m_Localized: Hero
     m_Metadata:
       m_Items: []
   references:
