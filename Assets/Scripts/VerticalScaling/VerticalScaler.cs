@@ -13,6 +13,7 @@ namespace VerticalScaling
             UpdateScale();
         }
 
+        [ContextMenu("Update scale")]
         private void UpdateScale()
         {
             var trf = transform;
