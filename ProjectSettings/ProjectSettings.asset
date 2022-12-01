@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: The Solar Moose
-  productName: Game Off 2022
+  productName: A.S.P.A.C.A
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -163,7 +163,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.TheSolarMoose.GameOff2022
-    Standalone: com.The-Solar-Moose.Game-Off-2022
+    Standalone: com.The-Solar-Moose.A.S.P.A.C.A
   buildNumber:
     Standalone: 0.1.52
     iPhone: 0
