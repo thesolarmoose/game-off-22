@@ -21,7 +21,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _textColor: {r: 0.19508718, g: 0.60433054, b: 0.754717, a: 1}
+  _textColor: {r: 0.48363712, g: 0.8490566, b: 0.36365253, a: 1}
   _characterSprite: {fileID: 0}
   references:
     version: 2
