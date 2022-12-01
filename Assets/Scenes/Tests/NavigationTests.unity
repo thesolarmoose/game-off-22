@@ -2666,10 +2666,10 @@ PrefabInstance:
     - target: {fileID: 129335929678441728, guid: 0cd356ff7a508ad4eb5bf9740f5b9136, type: 3}
       propertyPath: m_text
       value: "<b>Game and narrative design</b>\n<size=90%>Javier Montenegro</size>\n<size=40%>
-        </size>\n<b>Character design</b>\n<size=90%>Nat</size>\n<size=40%> </size>\n<b>Environment
-        design</b>\n<size=90%>Irene Centelles</size>\n<size=40%> </size>\n<b>Music
-        and sound design</b>\n<size=90%>Marco Postman</size>\n<size=40%> </size>\n<b>Programming
-        and Animation</b>\n<size=90%>Miguel Nicol\xE1s</size>"
+        </size>\n<b>Character design</b>\n<size=90%>DNA.tn (Nat)</size>\n<size=40%>
+        </size>\n<b>Environment design</b>\n<size=90%>Irene Centelles</size>\n<size=40%>
+        </size>\n<b>Music and sound design</b>\n<size=90%>Marco Postman</size>\n<size=40%>
+        </size>\n<b>Programming and Animation</b>\n<size=90%>Miguel Nicol\xE1s</size>"
       objectReference: {fileID: 0}
     - target: {fileID: 129335929678441728, guid: 0cd356ff7a508ad4eb5bf9740f5b9136, type: 3}
       propertyPath: m_fontSize
@@ -3587,6 +3587,14 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: -474129903261404802, guid: 0e348f2230bed254caad62f41b422c19, type: 2}
+    - target: {fileID: 3962220196560975757, guid: c497d7506174559408945a71376b1c29, type: 3}
+      propertyPath: m_text
+      value: "<b>Game and narrative design</b>\n<size=90%>Javier Montenegro</size>\n<size=40%>
+        </size>\n<b>Character design</b>\n<size=90%>DNA.tn (Nat)</size>\n<size=40%>
+        </size>\n<b>Environment design</b>\n<size=90%>Irene Centelles</size>\n<size=40%>
+        </size>\n<b>Music and sound design</b>\n<size=90%>Marco Postman</size>\n<size=40%>
+        </size>\n<b>Programming and Animation</b>\n<size=90%>Miguel Nicol\xE1s</size>"
+      objectReference: {fileID: 0}
     - target: {fileID: 3962220196560975757, guid: c497d7506174559408945a71376b1c29, type: 3}
       propertyPath: m_fontSize
       value: 21.7

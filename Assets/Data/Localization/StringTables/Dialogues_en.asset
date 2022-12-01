@@ -27,7 +27,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 2574584091930624
-    m_Localized: That makes no sense.
+    m_Localized: That does not make any sense.
     m_Metadata:
       m_Items: []
   - m_Id: 4348401071153152
@@ -90,7 +90,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357531072716800
-    m_Localized: A clay pot. Maybe there's something inside.
+    m_Localized: Weird! That clay pot seems suspicious.
     m_Metadata:
       m_Items: []
   - m_Id: 4357566300676096
@@ -117,13 +117,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4357881750085632
-    m_Localized: Over this hole, in the sky, there is another hole, one to leave
-      this village. You need a flying object. We. I also want to leave this place.
+    m_Localized: Over this hole, in the sky, I can see another hole. Maybe it is
+      a way out. I need a flying object to leave this place.
     m_Metadata:
       m_Items: []
   - m_Id: 4357908690100224
-    m_Localized: "A clock? Do you want to fly in a clock? Of course! Time flies.
-      You are a genius! Let\u2019s get the hell out of here!"
+    m_Localized: "Time flies\u2026 let\u2019s hope this works. If not, I am dead."
     m_Metadata:
       m_Items: []
   - m_Id: 4357942814957568
@@ -140,8 +139,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 4358049421582336
-    m_Localized: "I don\u2019t know why I bet a bunch of diamonds on a coin. I must
-      be stupid, like some kind of videogame villain."
+    m_Localized: "I don\u2019t know why I bet a bunch of diamonds on a coin. Crime
+      never pays. Maybe it's not too late to go into law like my brother."
     m_Metadata:
       m_Items: []
   - m_Id: 4408756606590976

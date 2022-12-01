@@ -39,7 +39,7 @@ MonoBehaviour:
     - rid: 805541210524483611
       type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
       data:
-        _character: {fileID: 11400000, guid: e5e2da976ee9a4f4eb7a102546abb9b2, type: 2}
+        _character: {fileID: 11400000, guid: 61b1a8bda66441f44af15d173a100523, type: 2}
         _dialogueText:
           m_TableReference:
             m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
@@ -205,7 +205,7 @@ MonoBehaviour:
     - rid: 805541210524483607
       type: {class: CustomDialogueLineData, ns: Dialogues.Data, asm: com.thesolarmoose.name}
       data:
-        _character: {fileID: 11400000, guid: e5e2da976ee9a4f4eb7a102546abb9b2, type: 2}
+        _character: {fileID: 11400000, guid: 61b1a8bda66441f44af15d173a100523, type: 2}
         _dialogueText:
           m_TableReference:
             m_TableCollectionName: GUID:faba47bbb5cc16b40be65c705effbf54
