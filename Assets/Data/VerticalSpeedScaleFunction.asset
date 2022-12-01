@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _minValue: 1
   _maxValue: 10
-  _slope: 0.7
-  _offset: 5
+  _slope: 0.9
+  _offset: 4
