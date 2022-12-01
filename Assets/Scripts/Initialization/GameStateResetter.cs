@@ -2,7 +2,7 @@
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace DefaultNamespace
+namespace Initialization
 {
     public class GameStateResetter : MonoBehaviour
     {
