@@ -4,12 +4,14 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace Items
 {
     public class ItemView : ViewBaseBehaviour<Item>, ISelectHandler, IDeselectHandler
     {
         [SerializeField] private TextMeshProUGUI _nameText;
+        [SerializeField] private Image _itemSprite;
         [SerializeField] private UnityEvent _onSelectEvent;
         [SerializeField] private UnityEvent _onDeselectEvent;
 
@@ -41,6 +43,7 @@ namespace Items
 
         private async void UpdateViewAsync(Item model)
         {
+            _itemSprite.sprite = model.Sprite;
             _nameText.text = "";
             var itemName = await model.ItemName.GetLocalizedStringAsync().Task;
             _nameText.text = itemName;

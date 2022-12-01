@@ -21,7 +21,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _sprite: {fileID: 0}
+  _sprite: {fileID: 21300000, guid: 38eac84b8bc6bc44783f5ad732b13c3f, type: 3}
   _pickupSound:
     Guid:
       Data1: -436187638
